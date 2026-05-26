@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcr1x3ni3r4y2"
-path="res://.godot/imported/bochiNodeB.jpg-3fbd8a0c1d79b8aec5825b6d224f3d9b.ctex"
+uid="uid://gl3ice80efgj"
+path="res://.godot/imported/bochiNodeR.png-044955331a1e5179f5a804d794bb9999.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bocchiNodeimages/bochiNodeB.jpg"
-dest_files=["res://.godot/imported/bochiNodeB.jpg-3fbd8a0c1d79b8aec5825b6d224f3d9b.ctex"]
+source_file="res://bocchiNodeimages/bochiNodeR.png"
+dest_files=["res://.godot/imported/bochiNodeR.png-044955331a1e5179f5a804d794bb9999.ctex"]
 
 [params]
 

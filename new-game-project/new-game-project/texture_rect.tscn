@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://4sdkdasyin0d"]
+
+[ext_resource type="Texture2D" uid="uid://cm65f8hvc8ea3" path="res://bocchiNodeimages/bochiNodeN.png" id="1_ohhw7"]
+
+[node name="TextureRect" type="TextureRect" unique_id=2086237960]
+offset_right = 1000.0
+offset_bottom = 1000.0
+texture = ExtResource("1_ohhw7")
