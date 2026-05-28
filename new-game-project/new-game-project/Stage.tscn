@@ -1,0 +1,145 @@
+[gd_scene format=3 uid="uid://6qfqqmgkb0l4"]
+
+[ext_resource type="Script" uid="uid://crq00udi54sa6" path="res://main_script.gd" id="1_2p67s"]
+[ext_resource type="Script" uid="uid://c5xtc2p1612wo" path="res://ui_script.gd" id="2_lneo4"]
+[ext_resource type="Texture2D" uid="uid://bnoty5lx3weg1" path="res://bocchiNodeimages/bochiNodeB.png" id="3_5n5ix"]
+[ext_resource type="Texture2D" uid="uid://m524g1bhb3w5" path="res://bocchiNodeimages/bochiNodeI.png" id="4_mk6be"]
+[ext_resource type="Texture2D" uid="uid://gl3ice80efgj" path="res://bocchiNodeimages/bochiNodeR.png" id="5_uymwg"]
+[ext_resource type="Texture2D" uid="uid://cm65f8hvc8ea3" path="res://bocchiNodeimages/bochiNodeN.png" id="6_sbwno"]
+[ext_resource type="Texture2D" uid="uid://ikx4nrcjjf1w" path="res://bocchi-the-rock-starry-band-stage-3d-model-e5b5d59047.webp" id="7_ktjup"]
+
+[node name="Gameplay" type="Node2D" unique_id=733056624]
+script = ExtResource("1_2p67s")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=477323307]
+
+[node name="Control" type="Control" parent="." unique_id=665946924]
+z_index = 2
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_lneo4")
+metadata/_edit_use_anchors_ = true
+
+[node name="Bocchi" type="TextureRect" parent="Control" unique_id=1214742441]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 49.625
+anchor_top = 15.174998
+anchor_right = 49.625
+anchor_bottom = 15.175
+offset_left = -1891.0
+offset_right = -891.0
+offset_bottom = 1000.0
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("3_5n5ix")
+metadata/_edit_use_anchors_ = true
+
+[node name="Kita" type="TextureRect" parent="Control" unique_id=1931824801]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 10.55
+anchor_top = 15.6
+anchor_right = 10.55
+anchor_bottom = 15.6
+offset_left = 986.0
+offset_top = -18.0
+offset_right = 1986.0
+offset_bottom = 982.0
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("4_mk6be")
+metadata/_edit_use_anchors_ = true
+
+[node name="Ryo" type="TextureRect" parent="Control" unique_id=1055117249]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 22.6
+anchor_top = 15.399999
+anchor_right = 22.6
+anchor_bottom = 15.4
+offset_left = 39.0
+offset_top = -9.0
+offset_right = 1039.0
+offset_bottom = 991.0
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("5_uymwg")
+metadata/_edit_use_anchors_ = true
+
+[node name="Ijichi" type="TextureRect" parent="Control" unique_id=22259685]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 36.375
+anchor_top = 15.099998
+anchor_right = 36.375
+anchor_bottom = 15.1
+offset_left = -938.0
+offset_top = 3.0
+offset_right = 62.0
+offset_bottom = 1003.0
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("6_sbwno")
+metadata/_edit_use_anchors_ = true
+
+[node name="Background" type="TextureRect" parent="Control" unique_id=1509205307]
+z_index = -1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 52.15
+anchor_top = 34.825
+anchor_right = 52.15
+anchor_bottom = 34.825
+offset_left = -2086.0
+offset_top = -1393.0
+offset_right = 2259.0
+offset_bottom = 1051.0
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("7_ktjup")
+metadata/_edit_use_anchors_ = true
+
+[node name="Playfield" type="Node2D" parent="." unique_id=2101342108]
+
+[node name="HitZone" type="Marker2D" parent="Playfield" unique_id=1734369764]
+position = Vector2(980, 975)
+
+[node name="Lane1_Reciever" type="ColorRect" parent="Playfield/HitZone" unique_id=186957155]
+z_index = 2
+offset_left = -1335.0
+offset_top = 19.0
+offset_right = -1028.0
+offset_bottom = 59.0
+color = Color(0.9464069, 0.47386092, 1, 1)
+
+[node name="Lane2_Reciever" type="ColorRect" parent="Playfield/HitZone" unique_id=809162967]
+z_index = 2
+offset_left = -1335.0
+offset_top = -21.0
+offset_right = -1028.0
+offset_bottom = 19.0
+color = Color(1, 0.96862745, 0, 1)
+
+[node name="Lane3_Reciever" type="ColorRect" parent="Playfield/HitZone" unique_id=230743804]
+z_index = 2
+offset_left = -1335.0
+offset_top = -61.0
+offset_right = -1028.0
+offset_bottom = -21.0
+color = Color(0, 0.19215687, 0.54901963, 1)
+
+[node name="Lane4_Reciever" type="ColorRect" parent="Playfield/HitZone" unique_id=189742946]
+offset_left = -1335.0
+offset_top = -101.0
+offset_right = -1028.0
+offset_bottom = -61.0
+color = Color(1, 0.24000001, 0.24000001, 1)
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1629673304]
+
+[node name="Score" type="Label" parent="HUD" unique_id=1067233601]
+offset_left = -665.0
+offset_top = 82.0
+offset_right = -71.0
+offset_bottom = 157.0
+text = "Lorem ipsum dolor
+Change this text in script later do not change it in the inspector please omg fahhh
+"
