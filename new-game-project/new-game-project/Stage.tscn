@@ -25,59 +25,60 @@ metadata/_edit_use_anchors_ = true
 [node name="Bocchi" type="TextureRect" parent="Control" unique_id=1214742441]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 49.625
-anchor_top = 15.174998
-anchor_right = 49.625
-anchor_bottom = 15.175
-offset_left = -1891.0
-offset_right = -891.0
-offset_bottom = 1000.0
-scale = Vector2(0.45, 0.45)
+anchor_left = 60.95
+anchor_top = 20.575
+anchor_right = 60.95
+anchor_bottom = 20.575
+offset_left = -1941.0
+offset_top = 22.0
+offset_right = -941.0
+offset_bottom = 1022.0
+scale = Vector2(0.25, 0.25)
 texture = ExtResource("3_5n5ix")
 metadata/_edit_use_anchors_ = true
 
 [node name="Kita" type="TextureRect" parent="Control" unique_id=1931824801]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 10.55
-anchor_top = 15.6
-anchor_right = 10.55
-anchor_bottom = 15.6
-offset_left = 986.0
-offset_top = -18.0
-offset_right = 1986.0
-offset_bottom = 982.0
-scale = Vector2(0.45, 0.45)
+anchor_left = 42.32499
+anchor_top = 21.775002
+anchor_right = 42.325
+anchor_bottom = 21.775
+offset_left = -451.00012
+offset_top = -26.0
+offset_right = 549.0
+offset_bottom = 974.0
+scale = Vector2(0.25, 0.25)
 texture = ExtResource("4_mk6be")
 metadata/_edit_use_anchors_ = true
 
 [node name="Ryo" type="TextureRect" parent="Control" unique_id=1055117249]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 22.6
-anchor_top = 15.399999
-anchor_right = 22.6
-anchor_bottom = 15.4
-offset_left = 39.0
-offset_top = -9.0
-offset_right = 1039.0
-offset_bottom = 991.0
-scale = Vector2(0.45, 0.45)
+anchor_left = 49.275
+anchor_top = 21.575
+anchor_right = 49.275
+anchor_bottom = 21.575
+offset_left = -965.0
+offset_top = -18.000061
+offset_right = 35.0
+offset_bottom = 982.0
+scale = Vector2(0.25, 0.25)
 texture = ExtResource("5_uymwg")
 metadata/_edit_use_anchors_ = true
 
 [node name="Ijichi" type="TextureRect" parent="Control" unique_id=22259685]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 36.375
-anchor_top = 15.099998
-anchor_right = 36.375
-anchor_bottom = 15.1
-offset_left = -938.0
-offset_top = 3.0
-offset_right = 62.0
-offset_bottom = 1003.0
-scale = Vector2(0.45, 0.45)
+anchor_left = 55.55
+anchor_top = 21.225002
+anchor_right = 55.55
+anchor_bottom = 21.225002
+offset_left = -1479.0
+offset_top = -4.0
+offset_right = -479.0
+offset_bottom = 996.0
+scale = Vector2(0.25, 0.25)
 texture = ExtResource("6_sbwno")
 metadata/_edit_use_anchors_ = true
 
@@ -100,38 +101,67 @@ metadata/_edit_use_anchors_ = true
 [node name="Playfield" type="Node2D" parent="." unique_id=2101342108]
 
 [node name="HitZone" type="Marker2D" parent="Playfield" unique_id=1734369764]
-position = Vector2(980, 975)
+position = Vector2(972, 859)
 
 [node name="Lane1_Reciever" type="ColorRect" parent="Playfield/HitZone" unique_id=186957155]
-z_index = 2
-offset_left = -1335.0
-offset_top = 19.0
-offset_right = -1028.0
-offset_bottom = 59.0
-color = Color(0.9464069, 0.47386092, 1, 1)
+z_index = 1
+offset_left = -463.00012
+offset_top = -16.0
+offset_right = -156.00012
+offset_bottom = 24.0
+scale = Vector2(0.8, 0.8)
+color = Color(1, 0.6199712, 0.90971136, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="Lane2_Reciever" type="ColorRect" parent="Playfield/HitZone" unique_id=809162967]
-z_index = 2
-offset_left = -1335.0
-offset_top = -21.0
-offset_right = -1028.0
-offset_bottom = 19.0
+z_index = 1
+offset_left = -220.00006
+offset_top = -16.0
+offset_right = 86.99994
+offset_bottom = 24.0
+scale = Vector2(0.8, 0.8)
 color = Color(1, 0.96862745, 0, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="Lane3_Reciever" type="ColorRect" parent="Playfield/HitZone" unique_id=230743804]
-z_index = 2
-offset_left = -1335.0
-offset_top = -61.0
-offset_right = -1028.0
-offset_bottom = -21.0
+z_index = 1
+offset_left = 26.000061
+offset_top = -16.0
+offset_right = 333.00006
+offset_bottom = 24.0
+scale = Vector2(0.8, 0.8)
 color = Color(0, 0.19215687, 0.54901963, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Lane3_Reciever2" type="ColorRect" parent="Playfield/HitZone" unique_id=813500213]
+z_index = 1
+offset_left = 565.9995
+offset_top = 239.0
+offset_right = 872.9995
+offset_bottom = 279.0
+scale = Vector2(-0.15879089, -36.966076)
+color = Color(1, 0.4300496, 0.3639275, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Lane3_Reciever3" type="ColorRect" parent="Playfield/HitZone" unique_id=1048284784]
+z_index = 1
+offset_left = -463.0
+offset_top = 239.0
+offset_right = -156.0
+offset_bottom = 279.0
+scale = Vector2(-0.15879089, -36.966076)
+color = Color(1, 0.58910686, 0.7165637, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="Lane4_Reciever" type="ColorRect" parent="Playfield/HitZone" unique_id=189742946]
-offset_left = -1335.0
-offset_top = -101.0
-offset_right = -1028.0
-offset_bottom = -61.0
-color = Color(1, 0.24000001, 0.24000001, 1)
+z_index = 1
+offset_left = 272.00006
+offset_top = -16.0
+offset_right = 579.00006
+offset_bottom = 24.0
+scale = Vector2(0.8, 0.8)
+color = Color(1, 0.37896678, 0.3480585, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="HUD" type="CanvasLayer" parent="." unique_id=1629673304]
 
