@@ -21,7 +21,7 @@ func _ready() -> void:
 
 func _input(event): #event parameter is just whatever keys the user pressed.
 	if event is InputEventKey:
-		if event.physical_keycode in [KEY_D, KEY_F, KEY_J, KEY_K]:
+		if event.physical_keycode in [KEY_D, KEY_F, KEY_J, KEY_K]: #checks if lane key pressed
 			print(event.as_text_keycode() + "was pressed")
 		elif event.physical_keycode in [KEY_1, KEY_2, KEY_3, KEY_4]: #input for testing if spawning the notes work for each lane
 			print("Number " + event.as_text_keycode() + " was pressed")
@@ -30,13 +30,5 @@ pass
 
 
 func _process(delta: float) -> void:
-	#if (Input.is_key_pressed(KEY_D)):
-		#print("D Pressed")
-	#if (Input.is_key_pressed(KEY_F)):
-		#print("F Pressed")
-	#if (Input.is_key_pressed(KEY_J)):
-		#print("J Pressed")
-	#if (Input.is_key_pressed(KEY_K)):
-		#print("K Pressed")
 		
 	pass
