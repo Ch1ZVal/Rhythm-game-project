@@ -19,6 +19,20 @@ func _ready() -> void:
 #TODO: Clock, math, score calculation, managing songs, etc
 #NOTE THIS SCRIPT CONTROLS THE HUD TOO DO NOT MAKE A SEPERATE SCRIPT FOR HUD
 
+func _input(event): #event parameter is just whatever keys the user pressed.
+	if event is InputEventKey:
+		if event.physical_keycode in [KEY_D, KEY_F, KEY_J, KEY_K]:
+			print(event)
+pass
+
+
 func _process(delta: float) -> void:
-	
+	#if (Input.is_key_pressed(KEY_D)):
+		#print("D Pressed")
+	#if (Input.is_key_pressed(KEY_F)):
+		#print("F Pressed")
+	#if (Input.is_key_pressed(KEY_J)):
+		#print("J Pressed")
+	#if (Input.is_key_pressed(KEY_K)):
+		#print("K Pressed")
 	pass

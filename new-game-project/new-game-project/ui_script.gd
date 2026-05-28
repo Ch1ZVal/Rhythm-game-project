@@ -15,11 +15,4 @@ func _process(delta: float) -> void:
 	#check the ms timing as well and award points approiate to the timing.
 	#Maybe add text popups saying "Bad" "miss" "Good" "Awesome", etc
 	#maybe add a combo counter too at the end
-	if (Input.is_key_pressed(KEY_D)):
-		print("D Pressed")
-	if (Input.is_key_pressed(KEY_F)):
-		print("F Pressed")
-	if (Input.is_key_pressed(KEY_J)):
-		print("J Pressed")
-	if (Input.is_key_pressed(KEY_K)):
-		print("K Pressed")
+	pass
