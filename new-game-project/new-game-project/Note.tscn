@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b6fatuhrxcuoa"]
+
+[node name="Note" type="Node2D" unique_id=1431585936]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1944018549]
+offset_right = 307.0
+offset_bottom = 40.0
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1813440132]

@@ -1,5 +1,7 @@
 extends Node2D
 
+@export var note_scene: PackedScene
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -18,4 +20,5 @@ func _ready() -> void:
 #NOTE THIS SCRIPT CONTROLS THE HUD TOO DO NOT MAKE A SEPERATE SCRIPT FOR HUD
 
 func _process(delta: float) -> void:
+	
 	pass
