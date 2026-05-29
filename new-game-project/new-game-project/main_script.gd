@@ -23,6 +23,18 @@ func _ready() -> void:
 
 func _spawn_note_in_lane(lane_num : int):
 	var new_note = NOTE_TEMPLATE.instantiate()
+	var color_rect = new_note.get_node("ColorRect")
+	
+	if lane_num == 1:
+		color_rect.color = Color.from_string("#ff9ee8", Color.HOT_PINK)
+		#2nd arg is for if the first color doesn't load, its a backup color
+	elif lane_num == 2:
+		color_rect.color = Color.from_string("#fff700", Color.YELLOW)
+	elif lane_num == 3:
+		color_rect.color = Color.from_string("#00318c", Color.NAVY_BLUE)
+	elif lane_num == 4:
+		color_rect.color = Color.from_string("#ff6159", Color.LIGHT_CORAL)
+		
 	
 	var receiver = playfield.get_node("HitZone/Lane" + str(lane_num) + "_Receiver")
 	#NOTE may rename the recievers to get cleaner code
