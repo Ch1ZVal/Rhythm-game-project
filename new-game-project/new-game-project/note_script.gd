@@ -12,7 +12,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	global_position.y += note_speed*delta #delta time!
 	
-	if (global_position.y > 1090):
+	if (global_position.y > 1081):
 		queue_free() #deletes it and stuff after it goes out of screen.
 		#otherwise there could be hudnreds of notes off-screen which could lag it
 	pass
