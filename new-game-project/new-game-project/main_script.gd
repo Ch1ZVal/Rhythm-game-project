@@ -48,9 +48,9 @@ func _spawn_note_in_lane(lane_num : int):
 
 func _input(event): #event parameter is just whatever keys the user pressed.
 	if event is InputEventKey:
-		if event.physical_keycode in [KEY_D, KEY_F, KEY_J, KEY_K]: #checks if lane key pressed
-			print(event.as_text_keycode() + "was pressed")
-		elif event.physical_keycode in [KEY_1]: #input for testing if spawning the notes work for each lane
+		#if event.physical_keycode in [KEY_D, KEY_F, KEY_J, KEY_K]: #checks if lane key pressed
+			#print(event.as_text_keycode() + "was pressed")
+		if event.physical_keycode in [KEY_1]: #input for testing if spawning the notes work for each lane
 			_spawn_note_in_lane(1)
 		elif event.physical_keycode in [KEY_2]: #input for testing if spawning the notes work for each lane
 			_spawn_note_in_lane(2)
@@ -58,7 +58,8 @@ func _input(event): #event parameter is just whatever keys the user pressed.
 			_spawn_note_in_lane(3)
 		elif event.physical_keycode in [KEY_4]: #input for testing if spawning the notes work for each lane
 			_spawn_note_in_lane(4)
-			
+		
+		
 pass
 
 
