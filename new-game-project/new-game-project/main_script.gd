@@ -1,6 +1,8 @@
 extends Node2D
 
 @export var note_scene: PackedScene
+@onready var playfield = $Playfield #this is prob gonna be used for some other thing if i want to change the scene template
+const NOTE_TEMPLATE = preload("res://Note.tscn")
 
 
 # Called when the node enters the scene tree for the first time.
@@ -19,12 +21,31 @@ func _ready() -> void:
 #TODO: Clock, math, score calculation, managing songs, etc
 #NOTE THIS SCRIPT CONTROLS THE HUD TOO DO NOT MAKE A SEPERATE SCRIPT FOR HUD
 
+func _spawn_note_in_lane(lane_num : int):
+	var new_note = NOTE_TEMPLATE.instantiate()
+	
+	var receiver = playfield.get_node("HitZone/Lane" + str(lane_num) + "_Receiver")
+	#NOTE may rename the recievers to get cleaner code
+	
+	#set pos
+	new_note.global_position.x = receiver.global_position.x
+	new_note.global_position.y = 0
+	
+	playfield.add_child(new_note)
+
+
 func _input(event): #event parameter is just whatever keys the user pressed.
 	if event is InputEventKey:
 		if event.physical_keycode in [KEY_D, KEY_F, KEY_J, KEY_K]: #checks if lane key pressed
 			print(event.as_text_keycode() + "was pressed")
-		elif event.physical_keycode in [KEY_1, KEY_2, KEY_3, KEY_4]: #input for testing if spawning the notes work for each lane
-			print("Number " + event.as_text_keycode() + " was pressed")
+		elif event.physical_keycode in [KEY_1]: #input for testing if spawning the notes work for each lane
+			_spawn_note_in_lane(1)
+		elif event.physical_keycode in [KEY_2]: #input for testing if spawning the notes work for each lane
+			_spawn_note_in_lane(2)
+		elif event.physical_keycode in [KEY_3]: #input for testing if spawning the notes work for each lane
+			_spawn_note_in_lane(3)
+		elif event.physical_keycode in [KEY_4]: #input for testing if spawning the notes work for each lane
+			_spawn_note_in_lane(4)
 			
 pass
 

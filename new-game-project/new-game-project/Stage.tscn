@@ -125,7 +125,7 @@ metadata/_edit_use_anchors_ = true
 [node name="HitZone" type="Marker2D" parent="Playfield" unique_id=1734369764]
 position = Vector2(972, 859)
 
-[node name="Lane1_Reciever" type="ColorRect" parent="Playfield/HitZone" unique_id=186957155]
+[node name="Lane1_Receiver" type="ColorRect" parent="Playfield/HitZone" unique_id=186957155]
 z_index = 1
 offset_left = -463.00012
 offset_top = -16.0
@@ -135,7 +135,7 @@ scale = Vector2(0.8, 0.8)
 color = Color(1, 0.6199712, 0.90971136, 1)
 metadata/_edit_use_anchors_ = true
 
-[node name="Lane2_Reciever" type="ColorRect" parent="Playfield/HitZone" unique_id=809162967]
+[node name="Lane2_Receiver" type="ColorRect" parent="Playfield/HitZone" unique_id=809162967]
 z_index = 1
 offset_left = -220.00006
 offset_top = -16.0
@@ -145,7 +145,7 @@ scale = Vector2(0.8, 0.8)
 color = Color(1, 0.96862745, 0, 1)
 metadata/_edit_use_anchors_ = true
 
-[node name="Lane3_Reciever" type="ColorRect" parent="Playfield/HitZone" unique_id=230743804]
+[node name="Lane3_Receiver" type="ColorRect" parent="Playfield/HitZone" unique_id=230743804]
 z_index = 1
 offset_left = 26.000061
 offset_top = -16.0
@@ -155,7 +155,7 @@ scale = Vector2(0.8, 0.8)
 color = Color(0, 0.19215687, 0.54901963, 1)
 metadata/_edit_use_anchors_ = true
 
-[node name="Lane4_Reciever" type="ColorRect" parent="Playfield/HitZone" unique_id=189742946]
+[node name="Lane4_Receiver" type="ColorRect" parent="Playfield/HitZone" unique_id=189742946]
 z_index = 1
 offset_left = 272.00006
 offset_top = -16.0

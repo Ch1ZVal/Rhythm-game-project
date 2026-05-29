@@ -1,9 +1,14 @@
 [gd_scene format=3 uid="uid://b6fatuhrxcuoa"]
 
+[ext_resource type="Script" uid="uid://b8r4spap8gic4" path="res://note_script.gd" id="1_m01oh"]
+
 [node name="Note" type="Node2D" unique_id=1431585936]
+script = ExtResource("1_m01oh")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1944018549]
+z_index = 10
 offset_right = 307.0
 offset_bottom = 40.0
+scale = Vector2(0.8, 0.8)
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1813440132]
