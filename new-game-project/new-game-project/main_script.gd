@@ -6,6 +6,10 @@ extends Node2D
 const NOTE_TEMPLATE = preload("res://Note.tscn")
 var shiawse_path = "res://songs_mp3/Shiawase.mp3"
 var shine_as_usual_path = "res://songs_mp3/Shine as usual.mp3"
+var monster_path = "res://songs_mp3/Monster.mp3"
+var never_forget_path = "res://songs_mp3/Never forget.mp3"
+var glbp_path = "res://songs_mp3/Guitar, loneliness, and Blue Planet.mp3"
+
 #songs lets gooo
 
 

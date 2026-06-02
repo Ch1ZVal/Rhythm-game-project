@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bxfywmqtxd8ap"
+path="res://.godot/imported/Guitar, loneliness, and Blue Planet.mp3-9997eb19caa637d9dc3c9108600f03b8.mp3str"
+
+[deps]
+
+source_file="res://songs_mp3/Guitar, loneliness, and Blue Planet.mp3"
+dest_files=["res://.godot/imported/Guitar, loneliness, and Blue Planet.mp3-9997eb19caa637d9dc3c9108600f03b8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

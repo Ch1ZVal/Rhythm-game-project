@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dnxcf2aerljlu"
+path="res://.godot/imported/Never forget.mp3-b0c6e00a088051999c0601d5c2fcce0b.mp3str"
+
+[deps]
+
+source_file="res://songs_mp3/Never forget.mp3"
+dest_files=["res://.godot/imported/Never forget.mp3-b0c6e00a088051999c0601d5c2fcce0b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
