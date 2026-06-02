@@ -1,6 +1,7 @@
 extends Node2D
 
 @export var note_scene: PackedScene
+@onready var audio_stream: AudioStreamPlayer
 @onready var playfield = $Playfield #this is prob gonna be used for some other thing if i want to change the scene template
 const NOTE_TEMPLATE = preload("res://Note.tscn")
 
@@ -64,5 +65,9 @@ pass
 
 
 func _process(delta: float) -> void:
-		
+	var current_time = audio_stream.get_playback_position() * 1000
+	#^gets the ms of the song being played at the current moment
+	#increases /w every millisecond
+	print(current_time)
+	#no ssongs yet so it's gonna return an error
 	pass
