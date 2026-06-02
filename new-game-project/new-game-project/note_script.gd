@@ -1,6 +1,7 @@
 extends Node2D
 
 var note_speed = 500
+var target_time: float = 0.0
 
 
 # Called when the node enters the scene tree for the first time.
