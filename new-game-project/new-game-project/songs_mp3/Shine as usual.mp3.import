@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bowdjn7680776"
+path="res://.godot/imported/Shine as usual.mp3-2c81fea47b0c9873edcf0236fe63eb5c.mp3str"
+
+[deps]
+
+source_file="res://songs_mp3/Shine as usual.mp3"
+dest_files=["res://.godot/imported/Shine as usual.mp3-2c81fea47b0c9873edcf0236fe63eb5c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -4,6 +4,9 @@ extends Node2D
 @onready var audio_stream: AudioStreamPlayer
 @onready var playfield = $Playfield #this is prob gonna be used for some other thing if i want to change the scene template
 const NOTE_TEMPLATE = preload("res://Note.tscn")
+var shiawse_song_path = "res://songs_mp3/Shiawase.mp3"
+var shine_as_usual_path = "res://songs_mp3/Shine as usual.mp3"
+#songs lets gooo
 
 
 # Called when the node enters the scene tree for the first time.
