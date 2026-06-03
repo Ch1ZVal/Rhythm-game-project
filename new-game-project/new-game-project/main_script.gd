@@ -9,12 +9,12 @@ var shine_as_usual_path = "res://songs_mp3/Shine as usual.mp3"
 var monster_path = "res://songs_mp3/Monster.mp3"
 var never_forget_path = "res://songs_mp3/Never forget.mp3"
 var glbp_path = "res://songs_mp3/Guitar, loneliness, and Blue Planet.mp3"
-
 #songs lets gooo
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	
 	pass # Replace with function body.
 
 
@@ -55,26 +55,17 @@ func _spawn_note_in_lane(lane_num : int):
 
 
 func _input(event): #event parameter is just whatever keys the user pressed.
-	if event is InputEventKey:
+	if event is InputEventKey and event.pressed:
 		#if event.physical_keycode in [KEY_D, KEY_F, KEY_J, KEY_K]: #checks if lane key pressed
 			#print(event.as_text_keycode() + "was pressed")
-		if event.physical_keycode in [KEY_1]: #input for testing if spawning the notes work for each lane
+		if event.physical_keycode in [KEY_D]: #input for testing if spawning the notes work for each lane
 			_spawn_note_in_lane(1)
-		elif event.physical_keycode in [KEY_2]: #input for testing if spawning the notes work for each lane
+		if event.physical_keycode in [KEY_F]: #input for testing if spawning the notes work for each lane
 			_spawn_note_in_lane(2)
-		elif event.physical_keycode in [KEY_3]: #input for testing if spawning the notes work for each lane
+		if event.physical_keycode in [KEY_J]: #input for testing if spawning the notes work for each lane
 			_spawn_note_in_lane(3)
-		elif event.physical_keycode in [KEY_4]: #input for testing if spawning the notes work for each lane
+		if event.physical_keycode in [KEY_K]: #input for testing if spawning the notes work for each lane
 			_spawn_note_in_lane(4)
 		
 		
 pass
-
-
-func _process(delta: float) -> void:
-	#var current_time = audio_stream.get_playback_position() * 1000
-	#^gets the ms of the song being played at the current moment
-	#increases /w every millisecond
-	#print(current_time)
-	#no ssongs yet so it's gonna return an error
-	pass
