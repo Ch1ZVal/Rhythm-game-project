@@ -2,12 +2,17 @@ extends Node2D
 
 var note_speed = 500
 var target_time: float = 0.0
+var travel_time = 1500 #ms
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
 
+
+func _get_spawn_time() -> float:
+	return target_time - travel_time
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
