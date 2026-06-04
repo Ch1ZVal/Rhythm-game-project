@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://cvkvtb25je5tc"]
 
+[ext_resource type="Script" uid="uid://b6avpqngxc0bg" path="res://menu.gd" id="1_uubjt"]
+
 [node name="Menu" type="Control" unique_id=598940727]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +9,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_uubjt")
+
+[node name="Press_Enter" type="Label" parent="." unique_id=361953702]
+layout_mode = 0
+offset_left = 594.0
+offset_top = 905.0
+offset_right = 1214.0
+offset_bottom = 993.0
+theme_override_font_sizes/font_size = 64
+text = "Press Enter to Begin"
