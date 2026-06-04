@@ -9,7 +9,7 @@ var shine_as_usual_path = "res://songs_mp3/Shine as usual.mp3"
 var monster_path = "res://songs_mp3/Monster.mp3"
 var never_forget_path = "res://songs_mp3/Never forget.mp3"
 var glbp_path = "res://songs_mp3/Guitar, loneliness, and Blue Planet.mp3"
-var current_time: float = audio_stream.get_playback_position() * 1000
+var current_time: float = 0.0
 var move_down_time: float = 1500.0
 #songs lets gooo
 
@@ -73,3 +73,8 @@ func _input(event): #event parameter is just whatever keys the user pressed.
 			_spawn_note_in_lane(3)
 		if event.physical_keycode in [KEY_K]: #input for testing if spawning the notes work for each lane
 			_spawn_note_in_lane(4)
+
+
+func _process(delta: float) -> void:
+	if audio_stream.is_playing():
+		current_time = audio_stream.get_playback_position() * 1000.0
