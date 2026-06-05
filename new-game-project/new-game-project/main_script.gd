@@ -59,7 +59,12 @@ func _spawn_note_in_lane(lane_num : int):
 	
 	
 	playfield.add_child(new_note)
-
+func _shiwase():
+	_spawn_note_in_lane(1)
+	_spawn_note_in_lane(2)
+	_spawn_note_in_lane(3)
+	_spawn_note_in_lane(4)
+	pass
 
 func _input(event): #event parameter is just whatever keys the user pressed.
 	if event is InputEventKey and event.pressed and not event.echo:
