@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://cvkvtb25je5tc"]
 
 [ext_resource type="Script" uid="uid://b6avpqngxc0bg" path="res://menu.gd" id="1_uubjt"]
+[ext_resource type="Texture2D" uid="uid://c64wqptaio63y" path="res://Shiawaselogo.png" id="3_mae5d"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ouk20"]
+load_path = "res://.godot/imported/Shineasusuallogo.png-bcb03f20258d6420d9ca0c95ef90e315.ctex"
 
 [node name="Menu" type="Control" unique_id=598940727]
 layout_mode = 3
@@ -13,9 +17,143 @@ script = ExtResource("1_uubjt")
 
 [node name="Press_Enter" type="Label" parent="." unique_id=361953702]
 layout_mode = 0
-offset_left = 594.0
-offset_top = 905.0
-offset_right = 1214.0
-offset_bottom = 993.0
+offset_left = 625.0
+offset_top = 932.0
+offset_right = 1245.0
+offset_bottom = 1020.0
 theme_override_font_sizes/font_size = 64
 text = "Press Enter to Begin"
+
+[node name="MenuBar" type="MenuBar" parent="." unique_id=1304199134]
+layout_mode = 0
+offset_right = 1913.0
+offset_bottom = 932.0
+
+[node name="LineEdit" type="LineEdit" parent="MenuBar" unique_id=818566663]
+layout_mode = 0
+offset_top = 319.0
+offset_right = 1913.0
+offset_bottom = 350.0
+
+[node name="Shineasusual" type="TextureRect" parent="." unique_id=2122487626]
+layout_mode = 0
+offset_left = 1.5258789e-05
+offset_top = 357.0
+offset_right = 1830.0
+offset_bottom = 2195.0
+scale = Vector2(0.15, 0.15)
+texture = SubResource("CompressedTexture2D_ouk20")
+
+[node name="Shiawase" type="TextureRect" parent="." unique_id=490384197]
+layout_mode = 0
+offset_top = 658.0
+offset_right = 1830.0
+offset_bottom = 2496.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("3_mae5d")
+
+[node name="ShinasusualTitle" type="Label" parent="." unique_id=446478429]
+layout_mode = 0
+offset_left = 287.0
+offset_top = 357.0
+offset_right = 957.0
+offset_bottom = 425.0
+theme_override_font_sizes/font_size = 40
+text = "Shine as usual"
+
+[node name="ShineasusualArtist" type="Label" parent="." unique_id=932303229]
+layout_mode = 0
+offset_left = 287.0
+offset_top = 403.0
+offset_right = 957.0
+offset_bottom = 471.0
+theme_override_font_sizes/font_size = 40
+text = "Kessoku Band"
+
+[node name="ShineasusualPlaybutton" type="Button" parent="." unique_id=1102654080]
+layout_mode = 0
+offset_left = 287.0
+offset_top = 578.0
+offset_right = 558.0
+offset_bottom = 632.0
+theme_override_colors/font_outline_color = Color(0, 0.972549, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 1, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 1, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 1, 0.39215687, 1)
+theme_override_colors/icon_hover_color = Color(0, 1, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Play"
+
+[node name="ShiawaseTitle" type="Label" parent="." unique_id=1654802367]
+layout_mode = 0
+offset_left = 287.0
+offset_top = 658.0
+offset_right = 957.0
+offset_bottom = 726.0
+theme_override_font_sizes/font_size = 40
+text = "Shiawase"
+
+[node name="ShiawaseArtist" type="Label" parent="." unique_id=1540169680]
+layout_mode = 0
+offset_left = 287.0
+offset_top = 704.0
+offset_right = 957.0
+offset_bottom = 772.0
+theme_override_font_sizes/font_size = 40
+text = "Omoinotake"
+
+[node name="ShineasusualPlaybutton2" type="Button" parent="." unique_id=395538777]
+layout_mode = 0
+offset_left = 287.0
+offset_top = 879.0
+offset_right = 558.0
+offset_bottom = 933.0
+theme_override_colors/font_outline_color = Color(0, 0.972549, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 1, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 1, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 1, 0.39215687, 1)
+theme_override_colors/icon_hover_color = Color(0, 1, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Play"
+
+[node name="Featured" type="Button" parent="." unique_id=1905161926]
+layout_mode = 0
+offset_right = 433.0
+offset_bottom = 99.0
+theme_override_font_sizes/font_size = 30
+text = "Featured"
+
+[node name="Anime" type="Button" parent="." unique_id=1568703645]
+layout_mode = 0
+offset_left = 452.0
+offset_right = 885.0
+offset_bottom = 99.0
+theme_override_font_sizes/font_size = 30
+text = "Anime"
+
+[node name="K-Pop" type="Button" parent="." unique_id=477197772]
+layout_mode = 0
+offset_left = 902.0
+offset_right = 1335.0
+offset_bottom = 99.0
+theme_override_font_sizes/font_size = 30
+text = "K-Pop"
+
+[node name="Button5" type="Button" parent="." unique_id=888117983]
+layout_mode = 0
+offset_left = 1353.0
+offset_right = 1786.0
+offset_bottom = 99.0
+theme_override_font_sizes/font_size = 30
+text = "Challenging"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1501500013]
+layout_mode = 0
+offset_top = 357.0
+offset_right = 1913.0
+offset_bottom = 2304.9993
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer" unique_id=47563614]
+layout_mode = 2
