@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://sfu3t31qpxbp"]
+
+[ext_resource type="Script" uid="uid://rr0ut0g21vxi" path="res://start.gd" id="1_r305v"]
+
+[node name="Start" type="Control" unique_id=755673055]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r305v")
+
+[node name="Label" type="Label" parent="." unique_id=1485642639]
+layout_mode = 0
+offset_left = 348.0
+offset_top = 853.0
+offset_right = 1564.0
+offset_bottom = 1028.0
+theme_override_font_sizes/font_size = 128
+text = "Press Enter To Start"
