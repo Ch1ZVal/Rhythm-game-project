@@ -1,5 +1,7 @@
 extends Control
 
+@onready var sau_play = $ShineasusualPlaybutton
+@onready var shiawase_play = $ShiawasePlaybutton
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -8,4 +10,11 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if sau_play.is_pressed():
+		GlobalTrackManager.selected_song = "shine_as_usual"
+		get_tree().change_scene_to_file("res://Stage.tscn")
+	elif shiawase_play.is_pressed():
+		GlobalTrackManager.selected_song = "sshiawase"
+		get_tree().change_scene_to_file("res://Stage.tscn")
+	#and then add more elifs as we add more songs
 	pass
