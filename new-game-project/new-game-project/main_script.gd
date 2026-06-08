@@ -4,11 +4,11 @@ extends Node2D
 @onready var audio_stream = $AudioStreamPlayer
 @onready var playfield = $Playfield #this is prob gonna be used for some other thing if i want to change the scene template
 const NOTE_TEMPLATE = preload("res://Note.tscn")
-var shiawse_path = "res://songs_mp3/Shiawase.mp3"
-var shine_as_usual_path = "res://songs_mp3/Shine as usual.mp3"
-var monster_path = "res://songs_mp3/Monster.mp3"
-var never_forget_path = "res://songs_mp3/Never forget.mp3"
-var glbp_path = "res://songs_mp3/Guitar, loneliness, and Blue Planet.mp3"
+#var shiawse_path = "res://songs_mp3/Shiawase.mp3"
+#var shine_as_usual_path = "res://songs_mp3/Shine as usual.mp3"
+#var monster_path = "res://songs_mp3/Monster.mp3"
+#var never_forget_path = "res://songs_mp3/Never forget.mp3"
+#var glbp_path = "res://songs_mp3/Guitar, loneliness, and Blue Planet.mp3"
 var current_time: float = 0.0
 var move_down_time: float = 1500.0
 
@@ -19,9 +19,7 @@ var selected_song = ""
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	selected_song = GlobalTrackManager.selected_song
-	
-	if selected_song == "shine_as_usual":
-		audio_stream.stream = load(shine_as_usual_path)
+	audio_stream.stream = load(selected_song)
 	audio_stream.play()
 	pass # Replace with function body.
 
