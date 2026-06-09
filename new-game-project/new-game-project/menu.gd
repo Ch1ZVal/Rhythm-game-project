@@ -11,10 +11,10 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if sau_play.is_pressed():
-		GlobalTrackManager.selected_song = "res://songs_mp3/Shine as usual.mp3"
+		GlobalTrackManager.selected_song = load("res://songs_mp3/Shine as usual.mp3")
 		get_tree().change_scene_to_file("res://Stage.tscn")
 	elif shiawase_play.is_pressed():
-		GlobalTrackManager.selected_song = "res://songs_mp3/Shiawase.mp3"
+		GlobalTrackManager.selected_song = load("res://songs_mp3/Shiawase.mp3")
 		get_tree().change_scene_to_file("res://Stage.tscn")
 	#and then add more elifs as we add more songs
 	pass
