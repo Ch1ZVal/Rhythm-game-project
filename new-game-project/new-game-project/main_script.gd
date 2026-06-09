@@ -60,7 +60,6 @@ func _ready() -> void:
 func _spawn_note_in_lane(lane_num: int, spawn_time: float):
 	var new_note = NOTE_TEMPLATE.instantiate()
 	var color_rect = new_note.get_node("ColorRect")
-	var hit_time = new_note.hit_time
 	
 	if lane_num == 1:
 		color_rect.color = Color.from_string("#ff9ee8", Color.HOT_PINK)
@@ -80,9 +79,9 @@ func _spawn_note_in_lane(lane_num: int, spawn_time: float):
 	new_note.global_position.x = receiver.global_position.x
 	new_note.global_position.y = 0
 	
+	
 	#new_note.target_time = calculated_time
 	#new_note.travel_time = move_down_time
-	
 	
 	playfield.add_child(new_note)
 
@@ -91,16 +90,17 @@ func _input(event): #event parameter is just whatever keys the user pressed.
 		#if event.physical_keycode in [KEY_D, KEY_F, KEY_J, KEY_K]: #checks if lane key pressed
 			#print(event.as_text_keycode() + "was pressed")
 		if event.physical_keycode in [KEY_D]: #input for testing if spawning the notes work for each lane
-			_spawn_note_in_lane(1)
+			_spawn_note_in_lane(1, 5.0)
 		if event.physical_keycode in [KEY_F]: #input for testing if spawning the notes work for each lane
-			_spawn_note_in_lane(2)
+			_spawn_note_in_lane(2, 5.0)
 		if event.physical_keycode in [KEY_J]: #input for testing if spawning the notes work for each lane
-			_spawn_note_in_lane(3)
+			_spawn_note_in_lane(3, 5.0)
 		if event.physical_keycode in [KEY_K]: #input for testing if spawning the notes work for each lane
-			_spawn_note_in_lane(4)
+			_spawn_note_in_lane(4, 5.0)
 
 
 func _process(_delta: float) -> void:
-	#if audio_stream.is_playing():
-		#print("Is PLAYING THE SONG")
+	if audio_stream.is_playing():
+		current_time = audio_stream.get_playback_position()
+	
 	pass
