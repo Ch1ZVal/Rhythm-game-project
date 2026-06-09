@@ -19,10 +19,11 @@ var selected_song = ""
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	selected_song = GlobalTrackManager.selected_song
-	audio_stream.stream = load(selected_song)
-	audio_stream.play()
-	pass # Replace with function body.
-
+	
+	if selected_song != null:
+		audio_stream.stream = selected_song
+		audio_stream.play() #no longer has delay when loading song.
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 
