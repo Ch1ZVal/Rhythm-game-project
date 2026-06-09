@@ -3,7 +3,7 @@ extends Node2D
 
 
 var distance_from_y = 859
-var spawn_time: float = 0.0
+
 var travel_time: float = 3.0 #number of seconds the note has to travel down the lane into the receptor
 #adjusting the time will make the speed faster/slower
 var note_speed = distance_from_y/travel_time
@@ -13,7 +13,8 @@ var note_speed = distance_from_y/travel_time
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var hit_time = audio_player.get_playback_position() + travel_time
+	var spawn_time: float = audio_player.get_playback_position()
+	var hit_time =  spawn_time + travel_time
 	print(hit_time)
 	pass # Replace with function body.
 

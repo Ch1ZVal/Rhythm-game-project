@@ -6,16 +6,35 @@ extends Node2D
 const NOTE_TEMPLATE = preload("res://Note.tscn")
 const RECEPTOR_Y = 859
 const SPAWN_Y = 0
-#var shiawse_path = "res://songs_mp3/Shiawase.mp3"
-#var shine_as_usual_path = "res://songs_mp3/Shine as usual.mp3"
-#var monster_path = "res://songs_mp3/Monster.mp3"
-#var never_forget_path = "res://songs_mp3/Never forget.mp3"
-#var glbp_path = "res://songs_mp3/Guitar, loneliness, and Blue Planet.mp3"
 var current_time: float = 0.0
 var move_down_time: float = 1500.0
 
 var selected_song = ""
 #songs lets gooo
+
+var test_chart: Array[Dictionary] = [ #test song chart ai made for me
+	# 1. Linear Introduction (Teaches player the layout)
+	{"spawn_time": 0.5, "lane": 1},
+	{"spawn_time": 1.5, "lane": 2},
+	{"spawn_time": 2.5, "lane": 3},
+	{"spawn_time": 3.5, "lane": 4},
+	
+	# 2. The Double-Note (Tests simultaneous rendering)
+	{"spawn_time": 5.0, "lane": 1},
+	{"spawn_time": 5.0, "lane": 4},
+	
+	# 3. The Stream (Tests uniform, rhythmic spacing)
+	{"spawn_time": 6.0, "lane": 2},
+	{"spawn_time": 6.5, "lane": 3},
+	{"spawn_time": 7.0, "lane": 4},
+	
+	# 4. The Double-Tap / Minijack (Tests rapid sequential notes in 1 lane)
+	{"spawn_time": 8.0, "lane": 1},
+	{"spawn_time": 8.3, "lane": 1},
+	
+	# 5. Ending Note
+	{"spawn_time": 9.5, "lane": 2}
+]
 
 
 # Called when the node enters the scene tree for the first time.
@@ -38,10 +57,10 @@ func _ready() -> void:
 #TODO: Clock, math, score calculation, managing songs, etc
 #NOTE THIS SCRIPT CONTROLS THE HUD TOO DO NOT MAKE A SEPERATE SCRIPT FOR HUD
 
-func _spawn_note_in_lane(lane_num : int):
+func _spawn_note_in_lane(lane_num: int, spawn_time: float):
 	var new_note = NOTE_TEMPLATE.instantiate()
 	var color_rect = new_note.get_node("ColorRect")
-	var calculated_time = current_time + move_down_time
+	var hit_time = new_note.hit_time
 	
 	if lane_num == 1:
 		color_rect.color = Color.from_string("#ff9ee8", Color.HOT_PINK)
