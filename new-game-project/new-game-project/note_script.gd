@@ -1,15 +1,20 @@
 extends Node2D
+@onready var audio_player = get_node("/root/Gameplay/AudioStreamPlayer")
+
 
 var distance_from_y = 859
 var spawn_time: float = 0.0
-var travel_time = 3 #number of seconds the note has to travel down the lane into the receptor
+var travel_time: float = 3.0 #number of seconds the note has to travel down the lane into the receptor
 #adjusting the time will make the speed faster/slower
 var note_speed = distance_from_y/travel_time
+
 #
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	var hit_time = audio_player.get_playback_position() + travel_time
+	print(hit_time)
 	pass # Replace with function body.
 
 

@@ -84,6 +84,4 @@ func _input(event): #event parameter is just whatever keys the user pressed.
 func _process(_delta: float) -> void:
 	#if audio_stream.is_playing():
 		#print("Is PLAYING THE SONG")
-	if audio_stream.is_playing():
-		current_time = audio_stream.get_playback_position() * 1000.0
-		print(current_time)
+	pass
