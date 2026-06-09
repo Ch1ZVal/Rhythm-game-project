@@ -78,7 +78,7 @@ func _input(event): #event parameter is just whatever keys the user pressed.
 			_spawn_note_in_lane(4)
 
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	#if audio_stream.is_playing():
 		#print("Is PLAYING THE SONG")
 	if audio_stream.is_playing():
