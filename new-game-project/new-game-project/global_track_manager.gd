@@ -1,6 +1,6 @@
 extends Node
 
-var selected_song: String = "" 
+var selected_song :AudioStream = null
 
 
 ## Called when the node enters the scene tree for the first time.
