@@ -5,7 +5,7 @@ extends Node2D
 @onready var playfield = $Playfield #this is prob gonna be used for some other thing if i want to change the scene template
 const NOTE_TEMPLATE = preload("res://Note.tscn")
 const RECEPTOR_Y = 859
-const SPAWN_Y = -100
+const SPAWN_Y = 0
 #var shiawse_path = "res://songs_mp3/Shiawase.mp3"
 #var shine_as_usual_path = "res://songs_mp3/Shine as usual.mp3"
 #var monster_path = "res://songs_mp3/Monster.mp3"
@@ -61,8 +61,8 @@ func _spawn_note_in_lane(lane_num : int):
 	new_note.global_position.x = receiver.global_position.x
 	new_note.global_position.y = 0
 	
-	new_note.target_time = calculated_time
-	new_note.travel_time = move_down_time
+	#new_note.target_time = calculated_time
+	#new_note.travel_time = move_down_time
 	
 	
 	playfield.add_child(new_note)
