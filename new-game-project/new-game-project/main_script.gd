@@ -120,6 +120,21 @@ func _move_active_notes() -> void: #moves the notes... pretty explainitory.
 			lane_4_notes.erase(note)
 
 
-func _input(event):
-	#now empty for now. Timing system will fill this back though
+func _input(event: InputEvent) -> void: #timing
+	if audio_stream.is_playing() and event is InputEventKey and event.pressed and not event.echo:
+			var user_hit_time = audio_stream.get_playback_position()
+			var spawn_time = user_hit_time + travel_time
+			var lane = 0
+			#:var = x is a neat way to edit stuff :)
+			if event.physical_keycode == KEY_D: lane = 1 
+			elif event.physical_keycode == KEY_F: lane = 2
+			elif event.physical_keycode == KEY_J: lane = 3
+			elif event.physical_keycode == KEY_K: lane = 4
+			
+			
+			
+			
+			
+	
 	pass
+	
