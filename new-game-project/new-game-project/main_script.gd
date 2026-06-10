@@ -11,6 +11,7 @@ const SPAWN_Y = 0.0 #the y in which notes spawn
 var current_time: float = 0.0
 var travel_time: float = 1.5 #1.5 seconds to travel down
 var note_speed: float = 572.6
+var score = 0
 
 var selected_song = ""
 
@@ -43,6 +44,7 @@ var test_chart: Array[Dictionary] = [  #gemini made this test song chart
 ]
 
 #these arrays track all notes spawned within their respective lanes.
+#a pipeline of notes basically.
 var lane_1_notes: Array[Node2D] = []
 var lane_2_notes: Array[Node2D] = []
 var lane_3_notes: Array[Node2D] = []
@@ -122,19 +124,48 @@ func _move_active_notes() -> void: #moves the notes... pretty explainitory.
 
 func _input(event: InputEvent) -> void: #timing
 	if audio_stream.is_playing() and event is InputEventKey and event.pressed and not event.echo:
-			var user_hit_time = audio_stream.get_playback_position()
-			var spawn_time = user_hit_time + travel_time
-			var lane = 0
-			#:var = x is a neat way to edit stuff :)
-			if event.physical_keycode == KEY_D: lane = 1 
-			elif event.physical_keycode == KEY_F: lane = 2
-			elif event.physical_keycode == KEY_J: lane = 3
-			elif event.physical_keycode == KEY_K: lane = 4
+		
+		var active_lane_notes: Array[Node2D] = []
+		
+		if event.physical_keycode == KEY_D: active_lane_notes = lane_1_notes
+		elif event.physical_keycode == KEY_F: active_lane_notes = lane_2_notes
+		elif event.physical_keycode == KEY_J: active_lane_notes = lane_3_notes
+		elif event.physical_keycode == KEY_K: active_lane_notes = lane_4_notes
+		
+		if active_lane_notes.size() > 0:
+			var target_note = active_lane_notes[0] #gets the current target note and it's propeerties/data
 			
-			
-			
-			
-			
-	
-	pass
+			if is_instance_valid(target_note):
+				var user_hit_time = audio_stream.get_playback_position()
+				var note_hit_time = target_note.hit_time #target_note
+				
+				#absolute value of timing difference
+				var timing_discrepancy = abs(user_hit_time - note_hit_time)
+				
+				#awards score via the discrepancy
+				if timing_discrepancy <= 0.03:
+					#print("PERFECT! Error: ", snapped(timing_discrepancy, 0.001))
+					score+=5
+					print(score)
+				elif timing_discrepancy <= 0.07:
+					#print("GREAT! Error: ", snapped(timing_discrepancy, 0.001))
+					score+=3
+					print(score)
+				elif timing_discrepancy <= 0.12:
+					#print("GOOD. Error: ", snapped(timing_discrepancy, 0.001))
+					score+=1
+					print(score)
+				elif timing_discrepancy <= 0.18:
+					#print("BAD. Error: ", snapped(timing_discrepancy, 0.001))
+					#doesn't add anything to score since bad
+					print(score)
+				else:
+					#else is just that they pressed too early. And uh nothing happens
+					score-=1 #penalty
+					print(score)
+					return
+				
+				# 5. PIPELINE & GAME CLEANUP: Remove the note so it can't be struck again
+				active_lane_notes.pop_front() # Erases index 0, shifting upcoming notes up
+				target_note.queue_free()      # Deletes the visual node from the screen
 	
