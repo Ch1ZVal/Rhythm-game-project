@@ -4,7 +4,7 @@ extends Node2D
 
 var distance_from_y = 859
 
-var travel_time: float = 3.0 #number of seconds the note has to travel down the lane into the receptor
+var travel_time: float = 1.5 #number of seconds the note has to travel down the lane into the receptor
 #adjusting the time will make the speed faster/slower
 var note_speed = distance_from_y/travel_time
 
