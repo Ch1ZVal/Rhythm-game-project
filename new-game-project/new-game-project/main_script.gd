@@ -6146,6 +6146,8 @@ func _ready() -> void:
 			selected_chart = monster_chart
 		elif audio_stream.stream.resource_path == "res://songs_mp3/Shine as usual.mp3":
 			selected_chart = shine_as_usual_chart
+		elif audio_stream.stream.resource_path == "res://songs_mp3/Monster.mp3":
+			selected_chart = monster_chart
 		audio_stream.play() 
 	
 
