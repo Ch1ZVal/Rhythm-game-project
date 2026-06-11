@@ -4,6 +4,7 @@ extends Node2D
 @onready var audio_stream = $AudioStreamPlayer
 @onready var playfield = $Playfield
 @onready var fx_particles = $GPUParticles2D 
+@onready var particle_scene: PackedScene = preload("res://particles_2d.tscn")
 
 const NOTE_TEMPLATE = preload("res://Note.tscn")
 const RECEPTOR_Y = 859.0 #where the Y recetor is. Basically feeds on the notes at that Y.
@@ -15,9 +16,10 @@ var note_speed: float = 572.6
 var score = 0
 
 
+
 var selected_song = ""
 
-#region New Code Region
+#region Shine as usual. So many lines
 var shine_as_usual_chart: Array[Dictionary] = [
 {"spawn_time": 2.550, "lane": 1},
 {"spawn_time": 4.250, "lane": 1},
@@ -878,64 +880,74 @@ func _remove_missed_notes(lane_notes: Array):
 		else:
 			break
 
-func _input(event: InputEvent) -> void: #timing
+func _input(event: InputEvent) -> void:
 	if audio_stream.is_playing() and event is InputEventKey and event.pressed and not event.echo:
 		
 		var active_lane_notes: Array[Node2D] = []
+		var spawn_position: Vector2 = Vector2.ZERO
+		var pressed_valid_lane: bool = false
 		
 		if event.physical_keycode == KEY_D: 
 			active_lane_notes = lane_1_notes
-			fx_particles.global_position = get_node("Playfield/HitZone/Lane1_Receiver").global_position
-			#print(str(fx_particles.global_position))
+			var node = get_node_or_null("Playfield/HitZone/Lane1_Receiver")
+			if node:
+				spawn_position = node.global_position
+				pressed_valid_lane = true
 		elif event.physical_keycode == KEY_F:
 			active_lane_notes = lane_2_notes
-			fx_particles.global_position = get_node("Playfield/HitZone/Lane2_Receiver").global_position
-			#print(str(fx_particles.global_position))
-			
+			var node = get_node_or_null("Playfield/HitZone/Lane2_Receiver")
+			if node:
+				spawn_position = node.global_position
+				pressed_valid_lane = true
 		elif event.physical_keycode == KEY_J:
 			active_lane_notes = lane_3_notes
-			fx_particles.global_position = get_node("Playfield/HitZone/Lane3_Receiver").global_position
-			#print(str(fx_particles.global_position))
+			var node = get_node_or_null("Playfield/HitZone/Lane3_Receiver")
+			if node:
+				spawn_position = node.global_position
+				pressed_valid_lane = true
 		elif event.physical_keycode == KEY_K:
 			active_lane_notes = lane_4_notes
-			fx_particles.global_position = get_node("Playfield/HitZone/Lane4_Receiver").global_position
-			#print(str(fx_particles.global_position))
+			var node = get_node_or_null("Playfield/HitZone/Lane4_Receiver")
+			if node:
+				spawn_position = node.global_position
+				pressed_valid_lane = true
+		
+		var current_fx: GPUParticles2D = null
+		
+		if pressed_valid_lane:
+			current_fx = particle_scene.instantiate() as GPUParticles2D
+			get_tree().current_scene.add_child(current_fx)
+			current_fx.global_position = spawn_position
+			current_fx.finished.connect(current_fx.queue_free)
+			current_fx.emitting = true
 		
 		if active_lane_notes.size() > 0:
-			var target_note = active_lane_notes[0] #gets the current target note and it's propeerties/data
+			var target_note = active_lane_notes[0] 
 			
-			if is_instance_valid(target_note):
+			if is_instance_valid(target_note) and current_fx != null:
 				var user_hit_time = audio_stream.get_playback_position()
-				var note_hit_time = target_note.hit_time #target_note
+				var note_hit_time = target_note.hit_time 
 				
-				#absolute value of timing difference
 				var timing_discrepancy = abs(user_hit_time - note_hit_time)
 				
-				#awards score via the discrepancy
 				if timing_discrepancy <= 0.03:
-					
-					score+=5
-					fx_particles.process_material.color = Color.GREEN
-					fx_particles.emitting = true
-					
+					score += 5
+					current_fx.process_material.color = Color.GREEN
 					print(score)
 				elif timing_discrepancy <= 0.09:
-					score+=3
-					fx_particles.process_material.color = Color.DEEP_SKY_BLUE
-					fx_particles.emitting = true
+					score += 3
+					current_fx.process_material.color = Color.DEEP_SKY_BLUE
 					print(score)
 				elif timing_discrepancy <= 0.18:
-					score+=1
-					fx_particles.emitting = true
-					fx_particles.process_material.color = Color.RED
-					fx_particles.emitting = true
+					score += 1
+					current_fx.process_material.color = Color.RED
 					print(score)
 				elif timing_discrepancy <= 0.30:
-					#doesn't add anything to score since bad
+					current_fx.process_material.color = Color.GRAY
 					print(score)
 				else:
-					#else is just that they pressed too early. And uh nothing happens
-					score-=1 #penalty
+					score -= 1
+					current_fx.process_material.color = Color.DARK_RED
 					print(score)
 				
 				active_lane_notes.pop_front() #erases index 0, shifting upcoming notes up
