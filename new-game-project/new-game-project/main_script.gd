@@ -2,7 +2,8 @@ extends Node2D
 
 @export var note_scene: PackedScene
 @onready var audio_stream = $AudioStreamPlayer
-@onready var playfield = $Playfield 
+@onready var playfield = $Playfield
+@onready var fx_particles = $GPUParticles2D 
 
 const NOTE_TEMPLATE = preload("res://Note.tscn")
 const RECEPTOR_Y = 859.0 #where the Y recetor is. Basically feeds on the notes at that Y.
@@ -13,8 +14,10 @@ var travel_time: float = 1.5 #1.5 seconds to travel down
 var note_speed: float = 572.6
 var score = 0
 
+
 var selected_song = ""
 
+#region New Code Region
 var shine_as_usual_chart: Array[Dictionary] = [
 {"spawn_time": 2.550, "lane": 1},
 {"spawn_time": 4.250, "lane": 1},
@@ -771,6 +774,7 @@ var shine_as_usual_chart: Array[Dictionary] = [
 {"spawn_time": 254.120, "lane": 2},
 {"spawn_time": 254.620, "lane": 1},
 ]
+#endregion
 
 
 
@@ -879,10 +883,23 @@ func _input(event: InputEvent) -> void: #timing
 		
 		var active_lane_notes: Array[Node2D] = []
 		
-		if event.physical_keycode == KEY_D: active_lane_notes = lane_1_notes
-		elif event.physical_keycode == KEY_F: active_lane_notes = lane_2_notes
-		elif event.physical_keycode == KEY_J: active_lane_notes = lane_3_notes
-		elif event.physical_keycode == KEY_K: active_lane_notes = lane_4_notes
+		if event.physical_keycode == KEY_D: 
+			active_lane_notes = lane_1_notes
+			fx_particles.global_position = get_node("Playfield/HitZone/Lane1_Receiver").global_position
+			#print(str(fx_particles.global_position))
+		elif event.physical_keycode == KEY_F:
+			active_lane_notes = lane_2_notes
+			fx_particles.global_position = get_node("Playfield/HitZone/Lane2_Receiver").global_position
+			#print(str(fx_particles.global_position))
+			
+		elif event.physical_keycode == KEY_J:
+			active_lane_notes = lane_3_notes
+			fx_particles.global_position = get_node("Playfield/HitZone/Lane3_Receiver").global_position
+			#print(str(fx_particles.global_position))
+		elif event.physical_keycode == KEY_K:
+			active_lane_notes = lane_4_notes
+			fx_particles.global_position = get_node("Playfield/HitZone/Lane4_Receiver").global_position
+			#print(str(fx_particles.global_position))
 		
 		if active_lane_notes.size() > 0:
 			var target_note = active_lane_notes[0] #gets the current target note and it's propeerties/data
@@ -896,19 +913,24 @@ func _input(event: InputEvent) -> void: #timing
 				
 				#awards score via the discrepancy
 				if timing_discrepancy <= 0.03:
-					#print("PERFECT! Error: ", snapped(timing_discrepancy, 0.001))
+					
 					score+=5
+					fx_particles.process_material.color = Color.GREEN
+					fx_particles.emitting = true
+					
 					print(score)
 				elif timing_discrepancy <= 0.09:
-					#print("GREAT! Error: ", snapped(timing_discrepancy, 0.001))
 					score+=3
+					fx_particles.process_material.color = Color.DEEP_SKY_BLUE
+					fx_particles.emitting = true
 					print(score)
 				elif timing_discrepancy <= 0.18:
-					#print("GOOD. Error: ", snapped(timing_discrepancy, 0.001))
 					score+=1
+					fx_particles.emitting = true
+					fx_particles.process_material.color = Color.RED
+					fx_particles.emitting = true
 					print(score)
 				elif timing_discrepancy <= 0.30:
-					#print("BAD. Error: ", snapped(timing_discrepancy, 0.001))
 					#doesn't add anything to score since bad
 					print(score)
 				else:
@@ -916,7 +938,6 @@ func _input(event: InputEvent) -> void: #timing
 					score-=1 #penalty
 					print(score)
 				
-				# 5. PIPELINE & GAME CLEANUP: Remove the note so it can't be struck again
-				active_lane_notes.pop_front() # Erases index 0, shifting upcoming notes up
-				target_note.queue_free()      # Deletes the visual node from the screen
+				active_lane_notes.pop_front() #erases index 0, shifting upcoming notes up
+				target_note.queue_free()      #deletes the visual node from the screen
 	
