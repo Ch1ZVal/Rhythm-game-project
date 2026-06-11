@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://sfu3t31qpxbp"]
 
 [ext_resource type="Script" uid="uid://rr0ut0g21vxi" path="res://start.gd" id="1_r305v"]
+[ext_resource type="Texture2D" uid="uid://crjfmt7455tj4" path="res://Untitled - June 10, 2026 at 23.52.36.png" id="2_52bhu"]
 
 [node name="Start" type="Control" unique_id=755673055]
 layout_mode = 3
@@ -19,3 +20,12 @@ offset_right = 1564.0
 offset_bottom = 1028.0
 theme_override_font_sizes/font_size = 128
 text = "Press Enter To Start"
+
+[node name="TextureRect" type="TextureRect" parent="Label" unique_id=2111108207]
+layout_mode = 0
+offset_left = 301.0
+offset_top = -735.0
+offset_right = 1555.0
+offset_bottom = 519.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_52bhu")
