@@ -6143,7 +6143,7 @@ func _ready() -> void:
 		audio_stream.stream = selected_song
 		
 		if audio_stream.stream.resource_path == "res://songs_mp3/Shiawase.mp3": 
-			selected_chart = monster_chart
+			selected_chart = shiawase_chart
 		elif audio_stream.stream.resource_path == "res://songs_mp3/Shine as usual.mp3":
 			selected_chart = shine_as_usual_chart
 		elif audio_stream.stream.resource_path == "res://songs_mp3/Monster.mp3":
