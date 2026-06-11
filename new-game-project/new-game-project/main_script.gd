@@ -5,6 +5,7 @@ extends Node2D
 @onready var playfield = $Playfield
 @onready var fx_particles = $GPUParticles2D 
 @onready var particle_scene: PackedScene = preload("res://particles_2d.tscn")
+@onready var score_text = $Score
 
 const NOTE_TEMPLATE = preload("res://Note.tscn")
 const RECEPTOR_Y = 859.0 #where the Y recetor is. Basically feeds on the notes at that Y.
@@ -796,6 +797,7 @@ func _ready() -> void:
 
 
 func _process(_delta: float) -> void:
+	score_text.text = "Score: " + str(score)
 	if audio_stream.is_playing():
 		current_time = audio_stream.get_playback_position()
 		
@@ -875,6 +877,7 @@ func _remove_missed_notes(lane_notes: Array):
 			continue
 
 		if current_time > note.hit_time + 0.30:
+			score-=5
 			note.queue_free()
 			lane_notes.pop_front()
 		else:

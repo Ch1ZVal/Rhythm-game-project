@@ -3,6 +3,8 @@ extends Control
 @onready var nijika: TextureRect = $Ijichi
 @onready var ryo: TextureRect = $Ryo
 @onready var kita: TextureRect = $Kita
+@onready var exit_button = $Exit_Button
+
 #bnri
 var imageB2 = preload("res://bocchiNodeimages/bochiNodeB2.png")
 var imageB = preload("res://bocchiNodeimages/bochiNodeB.png")
@@ -27,6 +29,10 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if exit_button.is_pressed():
+		get_tree().change_scene_to_file("res://menu.tscn")
+	
+	
 	if(pressedB):
 		timeB+=delta;
 	if(timeB-0.5>0):

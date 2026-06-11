@@ -11,6 +11,13 @@
 [node name="Gameplay" type="Node2D" unique_id=733056624]
 script = ExtResource("1_2p67s")
 
+[node name="Score" type="Label" parent="." unique_id=542316689]
+z_index = 10
+offset_right = 586.0
+offset_bottom = 88.0
+theme_override_font_sizes/font_size = 48
+text = "Lorem ipsum dolor"
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=477323307]
 
 [node name="Control" type="Control" parent="." unique_id=665946924]
@@ -120,6 +127,15 @@ scale = Vector2(-0.15879089, -36.966076)
 color = Color(1, 0.58910686, 0.7165637, 1)
 metadata/_edit_use_anchors_ = true
 
+[node name="Exit_Button" type="Button" parent="Control" unique_id=704902004]
+layout_mode = 0
+offset_left = 1562.0
+offset_top = 921.0
+offset_right = 1928.0
+offset_bottom = 1070.0
+theme_override_font_sizes/font_size = 64
+text = "Exit"
+
 [node name="Playfield" type="Node2D" parent="." unique_id=2101342108]
 
 [node name="HitZone" type="Marker2D" parent="Playfield" unique_id=1734369764]
@@ -167,7 +183,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="HUD" type="CanvasLayer" parent="." unique_id=1629673304]
 
-[node name="Score" type="Label" parent="HUD" unique_id=1067233601]
+[node name="sample" type="Label" parent="HUD" unique_id=1067233601]
 offset_left = -665.0
 offset_top = 82.0
 offset_right = -71.0
