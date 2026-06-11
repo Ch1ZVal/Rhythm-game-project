@@ -6163,7 +6163,9 @@ func _process(_delta: float) -> void:
 			if current_time >= note_data["spawn_time"]:
 				_spawn_note_in_lane(note_data["lane"], note_data["spawn_time"])
 				selected_chart.remove_at(i)
-		_move_active_notes()
+	else:
+		current_time+=_delta
+	_move_active_notes()
 	if audio_stream.is_playing():
 		current_time = audio_stream.get_playback_position()
 
