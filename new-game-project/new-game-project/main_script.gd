@@ -18,7 +18,8 @@ var score = 0
 
 
 var selected_song = ""
-
+var selected_chart = "" #james edit this
+ 
 #region Shine as usual. So many lines
 var shine_as_usual_chart: Array[Dictionary] = [
 {"spawn_time": 2.550, "lane": 1},
@@ -777,7 +778,6 @@ var shine_as_usual_chart: Array[Dictionary] = [
 {"spawn_time": 254.620, "lane": 1},
 ]
 #endregion
-
 
 
 #these arrays track all notes spawned within their respective lanes.
