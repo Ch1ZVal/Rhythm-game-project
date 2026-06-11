@@ -23,760 +23,3806 @@ var selected_chart = "" #james edit this
  
 #region Shine as usual. So many lines
 var shine_as_usual_chart: Array[Dictionary] = [
-{"spawn_time": 2.550, "lane": 1},
-{"spawn_time": 4.250, "lane": 1},
-{"spawn_time": 4.750, "lane": 2},
-{"spawn_time": 5.200, "lane": 1},
-{"spawn_time": 5.200, "lane": 2},
-{"spawn_time": 5.900, "lane": 2},
-{"spawn_time": 6.400, "lane": 3},
-{"spawn_time": 6.900, "lane": 4},
-{"spawn_time": 7.600, "lane": 3},
-{"spawn_time": 8.050, "lane": 3},
-{"spawn_time": 8.650, "lane": 2},
-{"spawn_time": 9.250, "lane": 2},
-{"spawn_time": 9.700, "lane": 1},
-{"spawn_time": 10.300, "lane": 2},
-{"spawn_time": 10.750, "lane": 3},
-{"spawn_time": 11.350, "lane": 4},
-{"spawn_time": 11.950, "lane": 3},
-{"spawn_time": 12.400, "lane": 2},
-{"spawn_time": 13.000, "lane": 3},
-{"spawn_time": 13.450, "lane": 2},
-{"spawn_time": 14.050, "lane": 2},
-{"spawn_time": 14.550, "lane": 3},
-{"spawn_time": 15.000, "lane": 2},
-{"spawn_time": 15.500, "lane": 3},
-{"spawn_time": 16.100, "lane": 2},
-{"spawn_time": 16.700, "lane": 2},
-{"spawn_time": 17.150, "lane": 1},
-{"spawn_time": 17.600, "lane": 1},
-{"spawn_time": 18.200, "lane": 2},
-{"spawn_time": 18.900, "lane": 1},
-{"spawn_time": 19.400, "lane": 2},
-{"spawn_time": 20.000, "lane": 2},
-{"spawn_time": 20.700, "lane": 3},
-{"spawn_time": 21.200, "lane": 2},
-{"spawn_time": 21.650, "lane": 3},
-{"spawn_time": 22.150, "lane": 4},
-{"spawn_time": 22.850, "lane": 4},
-{"spawn_time": 23.550, "lane": 3},
-{"spawn_time": 24.000, "lane": 3},
-{"spawn_time": 24.600, "lane": 2},
-{"spawn_time": 25.300, "lane": 3},
-{"spawn_time": 25.900, "lane": 3},
-{"spawn_time": 26.350, "lane": 2},
-{"spawn_time": 26.850, "lane": 3},
-{"spawn_time": 27.350, "lane": 4},
-{"spawn_time": 27.800, "lane": 3},
-{"spawn_time": 28.250, "lane": 2},
-{"spawn_time": 28.850, "lane": 1},
-{"spawn_time": 29.300, "lane": 2},
-{"spawn_time": 29.750, "lane": 3},
-{"spawn_time": 30.250, "lane": 3},
-{"spawn_time": 30.750, "lane": 2},
-{"spawn_time": 31.450, "lane": 2},
-{"spawn_time": 31.950, "lane": 3},
-{"spawn_time": 32.550, "lane": 2},
-{"spawn_time": 33.250, "lane": 2},
-{"spawn_time": 33.250, "lane": 4},
-{"spawn_time": 33.500, "lane": 3},
-{"spawn_time": 33.800, "lane": 2},
-{"spawn_time": 34.050, "lane": 1},
-{"spawn_time": 34.050, "lane": 2},
-{"spawn_time": 34.300, "lane": 3},
-{"spawn_time": 34.650, "lane": 4},
-{"spawn_time": 34.950, "lane": 4},
-{"spawn_time": 35.250, "lane": 2},
-{"spawn_time": 35.250, "lane": 3},
-{"spawn_time": 35.550, "lane": 4},
-{"spawn_time": 35.900, "lane": 3},
-{"spawn_time": 35.900, "lane": 4},
-{"spawn_time": 36.150, "lane": 2},
-{"spawn_time": 36.500, "lane": 3},
-{"spawn_time": 36.800, "lane": 2},
-{"spawn_time": 37.200, "lane": 1},
-{"spawn_time": 37.500, "lane": 1},
-{"spawn_time": 37.750, "lane": 1},
-{"spawn_time": 38.000, "lane": 1},
-{"spawn_time": 38.300, "lane": 1},
-{"spawn_time": 38.700, "lane": 1},
-{"spawn_time": 38.950, "lane": 1},
-{"spawn_time": 39.350, "lane": 1},
-{"spawn_time": 39.750, "lane": 1},
-{"spawn_time": 40.150, "lane": 1},
-{"spawn_time": 40.450, "lane": 1},
-{"spawn_time": 40.450, "lane": 4},
-{"spawn_time": 40.700, "lane": 2},
-{"spawn_time": 41.100, "lane": 1},
-{"spawn_time": 41.400, "lane": 1},
-{"spawn_time": 41.400, "lane": 2},
-{"spawn_time": 41.650, "lane": 2},
-{"spawn_time": 41.650, "lane": 4},
-{"spawn_time": 41.950, "lane": 3},
-{"spawn_time": 42.250, "lane": 4},
-{"spawn_time": 42.500, "lane": 4},
-{"spawn_time": 42.850, "lane": 3},
-{"spawn_time": 43.200, "lane": 3},
-{"spawn_time": 43.500, "lane": 2},
-{"spawn_time": 43.750, "lane": 1},
-{"spawn_time": 44.000, "lane": 1},
-{"spawn_time": 44.350, "lane": 1},
-{"spawn_time": 44.600, "lane": 2},
-{"spawn_time": 44.900, "lane": 3},
-{"spawn_time": 45.250, "lane": 4},
-{"spawn_time": 45.500, "lane": 3},
-{"spawn_time": 45.750, "lane": 4},
-{"spawn_time": 46.000, "lane": 4},
-{"spawn_time": 46.350, "lane": 3},
-{"spawn_time": 46.700, "lane": 4},
-{"spawn_time": 47.050, "lane": 3},
-{"spawn_time": 47.300, "lane": 1},
-{"spawn_time": 47.300, "lane": 2},
-{"spawn_time": 47.650, "lane": 1},
-{"spawn_time": 48.000, "lane": 1},
-{"spawn_time": 48.000, "lane": 2},
-{"spawn_time": 48.400, "lane": 2},
-{"spawn_time": 48.400, "lane": 3},
-{"spawn_time": 48.700, "lane": 4},
-{"spawn_time": 49.000, "lane": 4},
-{"spawn_time": 49.350, "lane": 4},
-{"spawn_time": 49.600, "lane": 3},
-{"spawn_time": 49.900, "lane": 4},
-{"spawn_time": 50.300, "lane": 3},
-{"spawn_time": 50.600, "lane": 3},
-{"spawn_time": 50.600, "lane": 4},
-{"spawn_time": 50.900, "lane": 4},
-{"spawn_time": 51.250, "lane": 4},
-{"spawn_time": 51.550, "lane": 4},
-{"spawn_time": 51.800, "lane": 3},
-{"spawn_time": 52.200, "lane": 3},
-{"spawn_time": 52.600, "lane": 1},
-{"spawn_time": 52.600, "lane": 2},
-{"spawn_time": 52.900, "lane": 2},
-{"spawn_time": 53.300, "lane": 2},
-{"spawn_time": 53.550, "lane": 3},
-{"spawn_time": 53.950, "lane": 2},
-{"spawn_time": 54.200, "lane": 1},
-{"spawn_time": 54.550, "lane": 1},
-{"spawn_time": 54.550, "lane": 3},
-{"spawn_time": 54.900, "lane": 1},
-{"spawn_time": 55.250, "lane": 2},
-{"spawn_time": 55.500, "lane": 2},
-{"spawn_time": 55.500, "lane": 3},
-{"spawn_time": 55.800, "lane": 3},
-{"spawn_time": 56.050, "lane": 3},
-{"spawn_time": 56.350, "lane": 4},
-{"spawn_time": 56.700, "lane": 4},
-{"spawn_time": 56.950, "lane": 4},
-{"spawn_time": 57.350, "lane": 4},
-{"spawn_time": 57.700, "lane": 4},
-{"spawn_time": 58.100, "lane": 4},
-{"spawn_time": 58.400, "lane": 4},
-{"spawn_time": 58.800, "lane": 4},
-{"spawn_time": 59.150, "lane": 4},
-{"spawn_time": 59.500, "lane": 4},
-{"spawn_time": 59.800, "lane": 3},
-{"spawn_time": 60.100, "lane": 2},
-{"spawn_time": 60.450, "lane": 2},
-{"spawn_time": 60.750, "lane": 1},
-{"spawn_time": 60.750, "lane": 2},
-{"spawn_time": 61.050, "lane": 2},
-{"spawn_time": 61.450, "lane": 3},
-{"spawn_time": 61.700, "lane": 4},
-{"spawn_time": 62.000, "lane": 3},
-{"spawn_time": 62.300, "lane": 2},
-{"spawn_time": 62.550, "lane": 1},
-{"spawn_time": 62.850, "lane": 1},
-{"spawn_time": 63.250, "lane": 2},
-{"spawn_time": 63.430, "lane": 3},
-{"spawn_time": 63.730, "lane": 4},
-{"spawn_time": 63.980, "lane": 4},
-{"spawn_time": 64.280, "lane": 4},
-{"spawn_time": 64.500, "lane": 4},
-{"spawn_time": 64.720, "lane": 3},
-{"spawn_time": 65.020, "lane": 3},
-{"spawn_time": 65.200, "lane": 3},
-{"spawn_time": 65.450, "lane": 2},
-{"spawn_time": 65.630, "lane": 1},
-{"spawn_time": 65.930, "lane": 2},
-{"spawn_time": 66.110, "lane": 2},
-{"spawn_time": 66.110, "lane": 3},
-{"spawn_time": 66.410, "lane": 4},
-{"spawn_time": 66.710, "lane": 4},
-{"spawn_time": 66.890, "lane": 4},
-{"spawn_time": 67.070, "lane": 4},
-{"spawn_time": 67.370, "lane": 4},
-{"spawn_time": 67.590, "lane": 2},
-{"spawn_time": 67.590, "lane": 4},
-{"spawn_time": 67.890, "lane": 3},
-{"spawn_time": 68.190, "lane": 4},
-{"spawn_time": 68.410, "lane": 4},
-{"spawn_time": 68.710, "lane": 3},
-{"spawn_time": 68.890, "lane": 4},
-{"spawn_time": 69.110, "lane": 4},
-{"spawn_time": 69.360, "lane": 4},
-{"spawn_time": 69.660, "lane": 4},
-{"spawn_time": 69.960, "lane": 4},
-{"spawn_time": 70.260, "lane": 3},
-{"spawn_time": 70.560, "lane": 3},
-{"spawn_time": 70.740, "lane": 2},
-{"spawn_time": 70.920, "lane": 1},
-{"spawn_time": 71.140, "lane": 1},
-{"spawn_time": 71.360, "lane": 2},
-{"spawn_time": 71.540, "lane": 2},
-{"spawn_time": 71.840, "lane": 3},
-{"spawn_time": 72.060, "lane": 2},
-{"spawn_time": 72.240, "lane": 2},
-{"spawn_time": 72.240, "lane": 3},
-{"spawn_time": 72.420, "lane": 4},
-{"spawn_time": 72.720, "lane": 3},
-{"spawn_time": 72.940, "lane": 2},
-{"spawn_time": 73.160, "lane": 3},
-{"spawn_time": 73.410, "lane": 3},
-{"spawn_time": 73.590, "lane": 2},
-{"spawn_time": 73.840, "lane": 1},
-{"spawn_time": 74.090, "lane": 1},
-{"spawn_time": 74.390, "lane": 2},
-{"spawn_time": 74.640, "lane": 1},
-{"spawn_time": 74.940, "lane": 2},
-{"spawn_time": 75.190, "lane": 3},
-{"spawn_time": 75.490, "lane": 3},
-{"spawn_time": 75.740, "lane": 3},
-{"spawn_time": 75.920, "lane": 4},
-{"spawn_time": 76.140, "lane": 2},
-{"spawn_time": 76.140, "lane": 4},
-{"spawn_time": 76.440, "lane": 4},
-{"spawn_time": 76.660, "lane": 4},
-{"spawn_time": 76.910, "lane": 1},
-{"spawn_time": 76.910, "lane": 4},
-{"spawn_time": 77.160, "lane": 3},
-{"spawn_time": 77.340, "lane": 4},
-{"spawn_time": 77.640, "lane": 4},
-{"spawn_time": 77.940, "lane": 3},
-{"spawn_time": 78.120, "lane": 2},
-{"spawn_time": 78.420, "lane": 3},
-{"spawn_time": 78.670, "lane": 4},
-{"spawn_time": 78.920, "lane": 4},
-{"spawn_time": 79.170, "lane": 4},
-{"spawn_time": 79.420, "lane": 3},
-{"spawn_time": 79.600, "lane": 2},
-{"spawn_time": 79.820, "lane": 2},
-{"spawn_time": 80.120, "lane": 1},
-{"spawn_time": 80.370, "lane": 1},
-{"spawn_time": 80.620, "lane": 1},
-{"spawn_time": 80.870, "lane": 1},
-{"spawn_time": 80.870, "lane": 2},
-{"spawn_time": 81.090, "lane": 1},
-{"spawn_time": 81.340, "lane": 1},
-{"spawn_time": 81.640, "lane": 2},
-{"spawn_time": 81.890, "lane": 1},
-{"spawn_time": 82.140, "lane": 1},
-{"spawn_time": 82.140, "lane": 2},
-{"spawn_time": 82.390, "lane": 3},
-{"spawn_time": 82.390, "lane": 4},
-{"spawn_time": 82.690, "lane": 2},
-{"spawn_time": 82.870, "lane": 1},
-{"spawn_time": 83.120, "lane": 2},
-{"spawn_time": 83.300, "lane": 3},
-{"spawn_time": 83.520, "lane": 3},
-{"spawn_time": 83.820, "lane": 3},
-{"spawn_time": 84.120, "lane": 4},
-{"spawn_time": 84.300, "lane": 3},
-{"spawn_time": 84.480, "lane": 2},
-{"spawn_time": 84.730, "lane": 1},
-{"spawn_time": 84.730, "lane": 3},
-{"spawn_time": 84.950, "lane": 4},
-{"spawn_time": 85.250, "lane": 2},
-{"spawn_time": 85.250, "lane": 4},
-{"spawn_time": 85.550, "lane": 1},
-{"spawn_time": 85.550, "lane": 4},
-{"spawn_time": 85.800, "lane": 4},
-{"spawn_time": 86.050, "lane": 1},
-{"spawn_time": 86.050, "lane": 4},
-{"spawn_time": 86.270, "lane": 4},
-{"spawn_time": 86.490, "lane": 3},
-{"spawn_time": 86.670, "lane": 4},
-{"spawn_time": 86.920, "lane": 4},
-{"spawn_time": 87.170, "lane": 4},
-{"spawn_time": 87.420, "lane": 1},
-{"spawn_time": 87.420, "lane": 4},
-{"spawn_time": 87.720, "lane": 4},
-{"spawn_time": 88.020, "lane": 3},
-{"spawn_time": 88.200, "lane": 3},
-{"spawn_time": 88.380, "lane": 4},
-{"spawn_time": 88.600, "lane": 4},
-{"spawn_time": 88.900, "lane": 4},
-{"spawn_time": 89.200, "lane": 4},
-{"spawn_time": 89.500, "lane": 3},
-{"spawn_time": 89.750, "lane": 4},
-{"spawn_time": 90.000, "lane": 4},
-{"spawn_time": 90.250, "lane": 2},
-{"spawn_time": 90.250, "lane": 4},
-{"spawn_time": 90.430, "lane": 3},
-{"spawn_time": 90.680, "lane": 4},
-{"spawn_time": 90.980, "lane": 4},
-{"spawn_time": 91.160, "lane": 3},
-{"spawn_time": 91.340, "lane": 4},
-{"spawn_time": 91.640, "lane": 4},
-{"spawn_time": 91.860, "lane": 4},
-{"spawn_time": 92.110, "lane": 3},
-{"spawn_time": 92.110, "lane": 4},
-{"spawn_time": 92.410, "lane": 2},
-{"spawn_time": 92.630, "lane": 3},
-{"spawn_time": 92.810, "lane": 2},
-{"spawn_time": 93.030, "lane": 1},
-{"spawn_time": 93.430, "lane": 1},
-{"spawn_time": 94.030, "lane": 2},
-{"spawn_time": 94.530, "lane": 1},
-{"spawn_time": 95.030, "lane": 2},
-{"spawn_time": 95.430, "lane": 3},
-{"spawn_time": 96.030, "lane": 2},
-{"spawn_time": 96.430, "lane": 2},
-{"spawn_time": 96.930, "lane": 2},
-{"spawn_time": 97.530, "lane": 2},
-{"spawn_time": 98.030, "lane": 3},
-{"spawn_time": 98.630, "lane": 4},
-{"spawn_time": 99.130, "lane": 4},
-{"spawn_time": 99.630, "lane": 4},
-{"spawn_time": 100.130, "lane": 3},
-{"spawn_time": 100.530, "lane": 3},
-{"spawn_time": 100.530, "lane": 4},
-{"spawn_time": 100.930, "lane": 4},
-{"spawn_time": 101.430, "lane": 3},
-{"spawn_time": 102.030, "lane": 2},
-{"spawn_time": 102.430, "lane": 2},
-{"spawn_time": 103.030, "lane": 1},
-{"spawn_time": 103.530, "lane": 1},
-{"spawn_time": 104.030, "lane": 1},
-{"spawn_time": 104.030, "lane": 3},
-{"spawn_time": 104.530, "lane": 2},
-{"spawn_time": 105.030, "lane": 1},
-{"spawn_time": 105.630, "lane": 2},
-{"spawn_time": 106.230, "lane": 3},
-{"spawn_time": 106.730, "lane": 3},
-{"spawn_time": 106.730, "lane": 4},
-{"spawn_time": 107.130, "lane": 4},
-{"spawn_time": 107.730, "lane": 3},
-{"spawn_time": 108.330, "lane": 2},
-{"spawn_time": 108.730, "lane": 2},
-{"spawn_time": 109.330, "lane": 2},
-{"spawn_time": 109.730, "lane": 2},
-{"spawn_time": 110.230, "lane": 1},
-{"spawn_time": 110.630, "lane": 1},
-{"spawn_time": 111.230, "lane": 2},
-{"spawn_time": 111.630, "lane": 1},
-{"spawn_time": 112.230, "lane": 1},
-{"spawn_time": 112.830, "lane": 1},
-{"spawn_time": 113.430, "lane": 1},
-{"spawn_time": 114.030, "lane": 1},
-{"spawn_time": 114.530, "lane": 1},
-{"spawn_time": 114.930, "lane": 2},
-{"spawn_time": 115.430, "lane": 2},
-{"spawn_time": 115.930, "lane": 1},
-{"spawn_time": 116.430, "lane": 1},
-{"spawn_time": 116.930, "lane": 1},
-{"spawn_time": 117.530, "lane": 1},
-{"spawn_time": 117.530, "lane": 4},
-{"spawn_time": 118.130, "lane": 1},
-{"spawn_time": 118.130, "lane": 4},
-{"spawn_time": 118.630, "lane": 1},
-{"spawn_time": 119.230, "lane": 2},
-{"spawn_time": 119.830, "lane": 1},
-{"spawn_time": 120.330, "lane": 1},
-{"spawn_time": 120.830, "lane": 1},
-{"spawn_time": 121.430, "lane": 1},
-{"spawn_time": 122.030, "lane": 1},
-{"spawn_time": 122.630, "lane": 1},
-{"spawn_time": 123.130, "lane": 2},
-{"spawn_time": 123.630, "lane": 3},
-{"spawn_time": 124.230, "lane": 4},
-{"spawn_time": 124.730, "lane": 3},
-{"spawn_time": 125.330, "lane": 3},
-{"spawn_time": 125.930, "lane": 3},
-{"spawn_time": 126.630, "lane": 2},
-{"spawn_time": 127.230, "lane": 1},
-{"spawn_time": 127.680, "lane": 2},
-{"spawn_time": 128.180, "lane": 1},
-{"spawn_time": 128.780, "lane": 1},
-{"spawn_time": 129.230, "lane": 1},
-{"spawn_time": 129.930, "lane": 2},
-{"spawn_time": 130.530, "lane": 1},
-{"spawn_time": 131.130, "lane": 1},
-{"spawn_time": 131.830, "lane": 2},
-{"spawn_time": 132.430, "lane": 3},
-{"spawn_time": 132.880, "lane": 4},
-{"spawn_time": 133.480, "lane": 3},
-{"spawn_time": 133.930, "lane": 2},
-{"spawn_time": 134.630, "lane": 3},
-{"spawn_time": 135.130, "lane": 4},
-{"spawn_time": 135.830, "lane": 4},
-{"spawn_time": 136.330, "lane": 4},
-{"spawn_time": 137.030, "lane": 3},
-{"spawn_time": 137.630, "lane": 4},
-{"spawn_time": 138.130, "lane": 4},
-{"spawn_time": 138.630, "lane": 4},
-{"spawn_time": 139.230, "lane": 3},
-{"spawn_time": 139.830, "lane": 2},
-{"spawn_time": 140.330, "lane": 1},
-{"spawn_time": 141.030, "lane": 1},
-{"spawn_time": 141.480, "lane": 1},
-{"spawn_time": 141.980, "lane": 1},
-{"spawn_time": 142.480, "lane": 2},
-{"spawn_time": 142.980, "lane": 2},
-{"spawn_time": 143.480, "lane": 2},
-{"spawn_time": 143.930, "lane": 1},
-{"spawn_time": 144.430, "lane": 1},
-{"spawn_time": 144.930, "lane": 1},
-{"spawn_time": 144.930, "lane": 2},
-{"spawn_time": 145.380, "lane": 1},
-{"spawn_time": 145.980, "lane": 1},
-{"spawn_time": 146.430, "lane": 1},
-{"spawn_time": 146.880, "lane": 2},
-{"spawn_time": 147.480, "lane": 3},
-{"spawn_time": 148.180, "lane": 4},
-{"spawn_time": 148.630, "lane": 3},
-{"spawn_time": 149.080, "lane": 4},
-{"spawn_time": 149.780, "lane": 4},
-{"spawn_time": 150.480, "lane": 4},
-{"spawn_time": 150.930, "lane": 3},
-{"spawn_time": 151.380, "lane": 4},
-{"spawn_time": 151.980, "lane": 4},
-{"spawn_time": 152.580, "lane": 3},
-{"spawn_time": 153.280, "lane": 4},
-{"spawn_time": 153.530, "lane": 4},
-{"spawn_time": 153.830, "lane": 4},
-{"spawn_time": 154.130, "lane": 4},
-{"spawn_time": 154.530, "lane": 4},
-{"spawn_time": 154.780, "lane": 4},
-{"spawn_time": 155.130, "lane": 1},
-{"spawn_time": 155.130, "lane": 3},
-{"spawn_time": 155.530, "lane": 3},
-{"spawn_time": 155.530, "lane": 4},
-{"spawn_time": 155.780, "lane": 3},
-{"spawn_time": 156.130, "lane": 2},
-{"spawn_time": 156.480, "lane": 1},
-{"spawn_time": 156.880, "lane": 1},
-{"spawn_time": 156.880, "lane": 4},
-{"spawn_time": 157.230, "lane": 1},
-{"spawn_time": 157.530, "lane": 1},
-{"spawn_time": 157.830, "lane": 1},
-{"spawn_time": 158.180, "lane": 2},
-{"spawn_time": 158.480, "lane": 3},
-{"spawn_time": 158.730, "lane": 2},
-{"spawn_time": 159.080, "lane": 2},
-{"spawn_time": 159.430, "lane": 1},
-{"spawn_time": 159.730, "lane": 1},
-{"spawn_time": 160.130, "lane": 1},
-{"spawn_time": 160.380, "lane": 2},
-{"spawn_time": 160.680, "lane": 1},
-{"spawn_time": 161.030, "lane": 2},
-{"spawn_time": 161.380, "lane": 1},
-{"spawn_time": 161.630, "lane": 1},
-{"spawn_time": 161.880, "lane": 2},
-{"spawn_time": 162.280, "lane": 2},
-{"spawn_time": 162.680, "lane": 2},
-{"spawn_time": 162.930, "lane": 3},
-{"spawn_time": 163.280, "lane": 2},
-{"spawn_time": 163.630, "lane": 1},
-{"spawn_time": 163.880, "lane": 1},
-{"spawn_time": 164.180, "lane": 1},
-{"spawn_time": 164.180, "lane": 3},
-{"spawn_time": 164.530, "lane": 1},
-{"spawn_time": 164.930, "lane": 2},
-{"spawn_time": 165.230, "lane": 1},
-{"spawn_time": 165.580, "lane": 1},
-{"spawn_time": 165.580, "lane": 2},
-{"spawn_time": 165.830, "lane": 3},
-{"spawn_time": 166.180, "lane": 4},
-{"spawn_time": 166.580, "lane": 3},
-{"spawn_time": 166.980, "lane": 4},
-{"spawn_time": 167.280, "lane": 3},
-{"spawn_time": 167.630, "lane": 2},
-{"spawn_time": 167.880, "lane": 2},
-{"spawn_time": 167.880, "lane": 3},
-{"spawn_time": 168.280, "lane": 2},
-{"spawn_time": 168.630, "lane": 1},
-{"spawn_time": 168.930, "lane": 2},
-{"spawn_time": 169.180, "lane": 2},
-{"spawn_time": 169.530, "lane": 1},
-{"spawn_time": 169.530, "lane": 3},
-{"spawn_time": 169.830, "lane": 1},
-{"spawn_time": 170.130, "lane": 1},
-{"spawn_time": 170.380, "lane": 2},
-{"spawn_time": 170.780, "lane": 3},
-{"spawn_time": 171.180, "lane": 3},
-{"spawn_time": 171.530, "lane": 4},
-{"spawn_time": 171.780, "lane": 4},
-{"spawn_time": 172.130, "lane": 2},
-{"spawn_time": 172.130, "lane": 4},
-{"spawn_time": 172.480, "lane": 2},
-{"spawn_time": 172.480, "lane": 3},
-{"spawn_time": 172.880, "lane": 2},
-{"spawn_time": 173.130, "lane": 3},
-{"spawn_time": 173.530, "lane": 4},
-{"spawn_time": 173.780, "lane": 4},
-{"spawn_time": 174.080, "lane": 3},
-{"spawn_time": 174.380, "lane": 2},
-{"spawn_time": 174.730, "lane": 1},
-{"spawn_time": 175.030, "lane": 2},
-{"spawn_time": 175.430, "lane": 2},
-{"spawn_time": 175.730, "lane": 3},
-{"spawn_time": 176.080, "lane": 3},
-{"spawn_time": 176.080, "lane": 4},
-{"spawn_time": 176.430, "lane": 3},
-{"spawn_time": 176.780, "lane": 3},
-{"spawn_time": 177.180, "lane": 3},
-{"spawn_time": 177.180, "lane": 4},
-{"spawn_time": 177.480, "lane": 3},
-{"spawn_time": 177.780, "lane": 2},
-{"spawn_time": 178.180, "lane": 2},
-{"spawn_time": 178.430, "lane": 1},
-{"spawn_time": 178.780, "lane": 2},
-{"spawn_time": 179.030, "lane": 2},
-{"spawn_time": 179.280, "lane": 2},
-{"spawn_time": 179.580, "lane": 1},
-{"spawn_time": 179.980, "lane": 1},
-{"spawn_time": 179.980, "lane": 2},
-{"spawn_time": 180.280, "lane": 1},
-{"spawn_time": 180.530, "lane": 2},
-{"spawn_time": 180.830, "lane": 1},
-{"spawn_time": 181.130, "lane": 2},
-{"spawn_time": 181.130, "lane": 3},
-{"spawn_time": 181.430, "lane": 3},
-{"spawn_time": 181.730, "lane": 2},
-{"spawn_time": 182.130, "lane": 3},
-{"spawn_time": 182.480, "lane": 3},
-{"spawn_time": 182.780, "lane": 4},
-{"spawn_time": 183.180, "lane": 4},
-{"spawn_time": 183.480, "lane": 3},
-{"spawn_time": 183.700, "lane": 2},
-{"spawn_time": 183.700, "lane": 3},
-{"spawn_time": 183.920, "lane": 4},
-{"spawn_time": 184.170, "lane": 1},
-{"spawn_time": 184.170, "lane": 4},
-{"spawn_time": 184.350, "lane": 4},
-{"spawn_time": 184.600, "lane": 1},
-{"spawn_time": 184.600, "lane": 4},
-{"spawn_time": 184.820, "lane": 4},
-{"spawn_time": 185.120, "lane": 3},
-{"spawn_time": 185.420, "lane": 2},
-{"spawn_time": 185.670, "lane": 2},
-{"spawn_time": 185.850, "lane": 1},
-{"spawn_time": 186.100, "lane": 1},
-{"spawn_time": 186.350, "lane": 2},
-{"spawn_time": 186.600, "lane": 3},
-{"spawn_time": 186.820, "lane": 1},
-{"spawn_time": 186.820, "lane": 2},
-{"spawn_time": 187.000, "lane": 3},
-{"spawn_time": 187.220, "lane": 2},
-{"spawn_time": 187.520, "lane": 2},
-{"spawn_time": 187.740, "lane": 3},
-{"spawn_time": 187.960, "lane": 2},
-{"spawn_time": 187.960, "lane": 3},
-{"spawn_time": 188.260, "lane": 3},
-{"spawn_time": 188.440, "lane": 3},
-{"spawn_time": 188.660, "lane": 2},
-{"spawn_time": 188.910, "lane": 1},
-{"spawn_time": 189.130, "lane": 1},
-{"spawn_time": 189.380, "lane": 2},
-{"spawn_time": 189.560, "lane": 3},
-{"spawn_time": 189.740, "lane": 2},
-{"spawn_time": 189.990, "lane": 2},
-{"spawn_time": 190.170, "lane": 3},
-{"spawn_time": 190.350, "lane": 2},
-{"spawn_time": 190.350, "lane": 4},
-{"spawn_time": 190.600, "lane": 1},
-{"spawn_time": 190.850, "lane": 2},
-{"spawn_time": 191.150, "lane": 1},
-{"spawn_time": 191.370, "lane": 1},
-{"spawn_time": 191.670, "lane": 1},
-{"spawn_time": 191.850, "lane": 1},
-{"spawn_time": 192.100, "lane": 1},
-{"spawn_time": 192.100, "lane": 4},
-{"spawn_time": 192.400, "lane": 1},
-{"spawn_time": 192.620, "lane": 1},
-{"spawn_time": 192.800, "lane": 2},
-{"spawn_time": 193.050, "lane": 3},
-{"spawn_time": 193.350, "lane": 4},
-{"spawn_time": 193.570, "lane": 4},
-{"spawn_time": 193.820, "lane": 3},
-{"spawn_time": 193.820, "lane": 4},
-{"spawn_time": 194.000, "lane": 4},
-{"spawn_time": 194.220, "lane": 3},
-{"spawn_time": 194.400, "lane": 3},
-{"spawn_time": 194.650, "lane": 2},
-{"spawn_time": 194.950, "lane": 2},
-{"spawn_time": 194.950, "lane": 3},
-{"spawn_time": 195.200, "lane": 3},
-{"spawn_time": 195.500, "lane": 2},
-{"spawn_time": 195.680, "lane": 2},
-{"spawn_time": 195.980, "lane": 1},
-{"spawn_time": 196.200, "lane": 1},
-{"spawn_time": 196.500, "lane": 1},
-{"spawn_time": 196.720, "lane": 2},
-{"spawn_time": 196.900, "lane": 2},
-{"spawn_time": 197.200, "lane": 3},
-{"spawn_time": 197.380, "lane": 4},
-{"spawn_time": 197.630, "lane": 3},
-{"spawn_time": 197.880, "lane": 2},
-{"spawn_time": 198.060, "lane": 2},
-{"spawn_time": 198.060, "lane": 3},
-{"spawn_time": 198.360, "lane": 2},
-{"spawn_time": 198.660, "lane": 3},
-{"spawn_time": 198.910, "lane": 2},
-{"spawn_time": 199.130, "lane": 1},
-{"spawn_time": 199.430, "lane": 1},
-{"spawn_time": 199.680, "lane": 1},
-{"spawn_time": 199.930, "lane": 1},
-{"spawn_time": 200.150, "lane": 1},
-{"spawn_time": 200.330, "lane": 2},
-{"spawn_time": 200.330, "lane": 4},
-{"spawn_time": 200.550, "lane": 3},
-{"spawn_time": 200.800, "lane": 4},
-{"spawn_time": 201.020, "lane": 4},
-{"spawn_time": 201.200, "lane": 4},
-{"spawn_time": 201.500, "lane": 2},
-{"spawn_time": 201.500, "lane": 4},
-{"spawn_time": 201.800, "lane": 4},
-{"spawn_time": 201.980, "lane": 3},
-{"spawn_time": 202.230, "lane": 2},
-{"spawn_time": 202.450, "lane": 1},
-{"spawn_time": 202.630, "lane": 1},
-{"spawn_time": 202.880, "lane": 1},
-{"spawn_time": 203.100, "lane": 1},
-{"spawn_time": 203.350, "lane": 1},
-{"spawn_time": 203.600, "lane": 2},
-{"spawn_time": 203.780, "lane": 1},
-{"spawn_time": 204.000, "lane": 1},
-{"spawn_time": 204.000, "lane": 2},
-{"spawn_time": 204.250, "lane": 1},
-{"spawn_time": 204.430, "lane": 1},
-{"spawn_time": 204.680, "lane": 2},
-{"spawn_time": 204.980, "lane": 3},
-{"spawn_time": 205.280, "lane": 4},
-{"spawn_time": 205.530, "lane": 4},
-{"spawn_time": 205.830, "lane": 3},
-{"spawn_time": 206.010, "lane": 4},
-{"spawn_time": 206.310, "lane": 4},
-{"spawn_time": 206.530, "lane": 4},
-{"spawn_time": 206.780, "lane": 4},
-{"spawn_time": 207.000, "lane": 4},
-{"spawn_time": 207.180, "lane": 4},
-{"spawn_time": 207.360, "lane": 2},
-{"spawn_time": 207.360, "lane": 3},
-{"spawn_time": 207.580, "lane": 2},
-{"spawn_time": 207.880, "lane": 2},
-{"spawn_time": 208.100, "lane": 1},
-{"spawn_time": 208.350, "lane": 2},
-{"spawn_time": 208.650, "lane": 2},
-{"spawn_time": 208.650, "lane": 3},
-{"spawn_time": 208.900, "lane": 2},
-{"spawn_time": 209.200, "lane": 1},
-{"spawn_time": 209.200, "lane": 3},
-{"spawn_time": 209.450, "lane": 1},
-{"spawn_time": 209.750, "lane": 2},
-{"spawn_time": 209.930, "lane": 2},
-{"spawn_time": 210.180, "lane": 1},
-{"spawn_time": 210.430, "lane": 1},
-{"spawn_time": 210.650, "lane": 2},
-{"spawn_time": 210.830, "lane": 3},
-{"spawn_time": 211.080, "lane": 2},
-{"spawn_time": 211.260, "lane": 2},
-{"spawn_time": 211.560, "lane": 3},
-{"spawn_time": 211.810, "lane": 2},
-{"spawn_time": 212.030, "lane": 1},
-{"spawn_time": 212.030, "lane": 3},
-{"spawn_time": 212.330, "lane": 3},
-{"spawn_time": 212.550, "lane": 2},
-{"spawn_time": 212.850, "lane": 2},
-{"spawn_time": 213.070, "lane": 1},
-{"spawn_time": 213.570, "lane": 1},
-{"spawn_time": 214.170, "lane": 2},
-{"spawn_time": 214.770, "lane": 3},
-{"spawn_time": 215.370, "lane": 3},
-{"spawn_time": 215.770, "lane": 4},
-{"spawn_time": 216.170, "lane": 3},
-{"spawn_time": 216.770, "lane": 4},
-{"spawn_time": 217.270, "lane": 3},
-{"spawn_time": 217.870, "lane": 4},
-{"spawn_time": 218.270, "lane": 4},
-{"spawn_time": 218.870, "lane": 3},
-{"spawn_time": 218.870, "lane": 4},
-{"spawn_time": 219.470, "lane": 2},
-{"spawn_time": 219.470, "lane": 3},
-{"spawn_time": 219.870, "lane": 1},
-{"spawn_time": 220.370, "lane": 2},
-{"spawn_time": 220.770, "lane": 3},
-{"spawn_time": 221.370, "lane": 2},
-{"spawn_time": 221.970, "lane": 1},
-{"spawn_time": 222.570, "lane": 2},
-{"spawn_time": 223.170, "lane": 1},
-{"spawn_time": 223.670, "lane": 1},
-{"spawn_time": 224.270, "lane": 1},
-{"spawn_time": 224.870, "lane": 1},
-{"spawn_time": 225.270, "lane": 1},
-{"spawn_time": 225.770, "lane": 1},
-{"spawn_time": 226.270, "lane": 2},
-{"spawn_time": 226.870, "lane": 3},
-{"spawn_time": 227.370, "lane": 3},
-{"spawn_time": 227.970, "lane": 4},
-{"spawn_time": 228.570, "lane": 4},
-{"spawn_time": 229.070, "lane": 3},
-{"spawn_time": 229.070, "lane": 4},
-{"spawn_time": 229.470, "lane": 4},
-{"spawn_time": 229.870, "lane": 4},
-{"spawn_time": 230.470, "lane": 3},
-{"spawn_time": 230.870, "lane": 4},
-{"spawn_time": 231.370, "lane": 3},
-{"spawn_time": 231.770, "lane": 2},
-{"spawn_time": 232.370, "lane": 3},
-{"spawn_time": 232.970, "lane": 2},
-{"spawn_time": 232.970, "lane": 3},
-{"spawn_time": 233.370, "lane": 1},
-{"spawn_time": 233.370, "lane": 3},
-{"spawn_time": 233.970, "lane": 4},
-{"spawn_time": 234.370, "lane": 4},
-{"spawn_time": 234.770, "lane": 4},
-{"spawn_time": 235.270, "lane": 4},
-{"spawn_time": 235.770, "lane": 3},
-{"spawn_time": 236.170, "lane": 4},
-{"spawn_time": 236.570, "lane": 3},
-{"spawn_time": 236.970, "lane": 2},
-{"spawn_time": 237.370, "lane": 3},
-{"spawn_time": 237.870, "lane": 3},
-{"spawn_time": 238.470, "lane": 3},
-{"spawn_time": 238.870, "lane": 3},
-{"spawn_time": 239.270, "lane": 4},
-{"spawn_time": 239.870, "lane": 4},
-{"spawn_time": 240.270, "lane": 3},
-{"spawn_time": 240.670, "lane": 4},
-{"spawn_time": 241.270, "lane": 2},
-{"spawn_time": 241.270, "lane": 3},
-{"spawn_time": 241.870, "lane": 4},
-{"spawn_time": 242.370, "lane": 3},
-{"spawn_time": 242.770, "lane": 4},
-{"spawn_time": 243.370, "lane": 3},
-{"spawn_time": 243.970, "lane": 2},
-{"spawn_time": 244.420, "lane": 2},
-{"spawn_time": 245.120, "lane": 2},
-{"spawn_time": 245.570, "lane": 2},
-{"spawn_time": 246.270, "lane": 3},
-{"spawn_time": 246.870, "lane": 3},
-{"spawn_time": 247.320, "lane": 2},
-{"spawn_time": 247.820, "lane": 2},
-{"spawn_time": 248.520, "lane": 1},
-{"spawn_time": 249.120, "lane": 1},
-{"spawn_time": 249.720, "lane": 1},
-{"spawn_time": 250.220, "lane": 2},
-{"spawn_time": 250.920, "lane": 3},
-{"spawn_time": 251.620, "lane": 2},
-{"spawn_time": 252.120, "lane": 3},
-{"spawn_time": 252.570, "lane": 2},
-{"spawn_time": 253.170, "lane": 1},
-{"spawn_time": 253.620, "lane": 2},
-{"spawn_time": 254.120, "lane": 2},
-{"spawn_time": 254.620, "lane": 1},
+  {
+	"spawn_time": 4.075,
+	"lane": 1
+  },
+  {
+	"spawn_time": 4.085,
+	"lane": 2
+  },
+  {
+	"spawn_time": 4.352,
+	"lane": 3
+  },
+  {
+	"spawn_time": 4.554,
+	"lane": 4
+  },
+  {
+	"spawn_time": 4.757,
+	"lane": 1
+  },
+  {
+	"spawn_time": 5.067,
+	"lane": 2
+  },
+  {
+	"spawn_time": 5.291,
+	"lane": 3
+  },
+  {
+	"spawn_time": 5.515,
+	"lane": 4
+  },
+  {
+	"spawn_time": 5.525,
+	"lane": 1
+  },
+  {
+	"spawn_time": 5.696,
+	"lane": 2
+  },
+  {
+	"spawn_time": 5.856,
+	"lane": 3
+  },
+  {
+	"spawn_time": 6.165,
+	"lane": 4
+  },
+  {
+	"spawn_time": 6.187,
+	"lane": 1
+  },
+  {
+	"spawn_time": 6.347,
+	"lane": 2
+  },
+  {
+	"spawn_time": 6.496,
+	"lane": 3
+  },
+  {
+	"spawn_time": 6.742,
+	"lane": 4
+  },
+  {
+	"spawn_time": 6.987,
+	"lane": 1
+  },
+  {
+	"spawn_time": 6.997,
+	"lane": 2
+  },
+  {
+	"spawn_time": 7.136,
+	"lane": 3
+  },
+  {
+	"spawn_time": 7.37,
+	"lane": 4
+  },
+  {
+	"spawn_time": 7.605,
+	"lane": 1
+  },
+  {
+	"spawn_time": 7.616,
+	"lane": 2
+  },
+  {
+	"spawn_time": 7.93,
+	"lane": 3
+  },
+  {
+	"spawn_time": 8.245,
+	"lane": 4
+  },
+  {
+	"spawn_time": 8.554,
+	"lane": 1
+  },
+  {
+	"spawn_time": 8.864,
+	"lane": 2
+  },
+  {
+	"spawn_time": 8.875,
+	"lane": 3
+  },
+  {
+	"spawn_time": 9.043,
+	"lane": 4
+  },
+  {
+	"spawn_time": 9.211,
+	"lane": 1
+  },
+  {
+	"spawn_time": 9.379,
+	"lane": 2
+  },
+  {
+	"spawn_time": 9.547,
+	"lane": 3
+  },
+  {
+	"spawn_time": 9.851,
+	"lane": 4
+  },
+  {
+	"spawn_time": 10.155,
+	"lane": 1
+  },
+  {
+	"spawn_time": 10.176,
+	"lane": 2
+  },
+  {
+	"spawn_time": 10.502,
+	"lane": 3
+  },
+  {
+	"spawn_time": 10.827,
+	"lane": 4
+  },
+  {
+	"spawn_time": 11.125,
+	"lane": 1
+  },
+  {
+	"spawn_time": 11.424,
+	"lane": 2
+  },
+  {
+	"spawn_time": 11.594,
+	"lane": 3
+  },
+  {
+	"spawn_time": 11.765,
+	"lane": 4
+  },
+  {
+	"spawn_time": 12.096,
+	"lane": 1
+  },
+  {
+	"spawn_time": 12.107,
+	"lane": 2
+  },
+  {
+	"spawn_time": 12.427,
+	"lane": 3
+  },
+  {
+	"spawn_time": 12.747,
+	"lane": 4
+  },
+  {
+	"spawn_time": 13.029,
+	"lane": 1
+  },
+  {
+	"spawn_time": 13.312,
+	"lane": 2
+  },
+  {
+	"spawn_time": 13.59,
+	"lane": 3
+  },
+  {
+	"spawn_time": 13.867,
+	"lane": 4
+  },
+  {
+	"spawn_time": 13.877,
+	"lane": 1
+  },
+  {
+	"spawn_time": 13.941,
+	"lane": 2
+  },
+  {
+	"spawn_time": 14.037,
+	"lane": 3
+  },
+  {
+	"spawn_time": 14.347,
+	"lane": 4
+  },
+  {
+	"spawn_time": 14.357,
+	"lane": 1
+  },
+  {
+	"spawn_time": 14.64,
+	"lane": 2
+  },
+  {
+	"spawn_time": 14.923,
+	"lane": 3
+  },
+  {
+	"spawn_time": 15.2,
+	"lane": 4
+  },
+  {
+	"spawn_time": 15.477,
+	"lane": 1
+  },
+  {
+	"spawn_time": 15.797,
+	"lane": 2
+  },
+  {
+	"spawn_time": 15.968,
+	"lane": 3
+  },
+  {
+	"spawn_time": 16.288,
+	"lane": 4
+  },
+  {
+	"spawn_time": 16.608,
+	"lane": 1
+  },
+  {
+	"spawn_time": 16.768,
+	"lane": 2
+  },
+  {
+	"spawn_time": 17.014,
+	"lane": 3
+  },
+  {
+	"spawn_time": 17.259,
+	"lane": 4
+  },
+  {
+	"spawn_time": 17.494,
+	"lane": 1
+  },
+  {
+	"spawn_time": 17.728,
+	"lane": 2
+  },
+  {
+	"spawn_time": 17.877,
+	"lane": 3
+  },
+  {
+	"spawn_time": 17.888,
+	"lane": 4
+  },
+  {
+	"spawn_time": 18.048,
+	"lane": 1
+  },
+  {
+	"spawn_time": 18.294,
+	"lane": 2
+  },
+  {
+	"spawn_time": 18.539,
+	"lane": 3
+  },
+  {
+	"spawn_time": 18.854,
+	"lane": 4
+  },
+  {
+	"spawn_time": 19.168,
+	"lane": 1
+  },
+  {
+	"spawn_time": 19.488,
+	"lane": 2
+  },
+  {
+	"spawn_time": 19.819,
+	"lane": 3
+  },
+  {
+	"spawn_time": 20.048,
+	"lane": 4
+  },
+  {
+	"spawn_time": 20.277,
+	"lane": 1
+  },
+  {
+	"spawn_time": 20.448,
+	"lane": 2
+  },
+  {
+	"spawn_time": 20.619,
+	"lane": 3
+  },
+  {
+	"spawn_time": 20.859,
+	"lane": 4
+  },
+  {
+	"spawn_time": 21.099,
+	"lane": 1
+  },
+  {
+	"spawn_time": 21.269,
+	"lane": 2
+  },
+  {
+	"spawn_time": 21.504,
+	"lane": 3
+  },
+  {
+	"spawn_time": 21.739,
+	"lane": 4
+  },
+  {
+	"spawn_time": 22.059,
+	"lane": 1
+  },
+  {
+	"spawn_time": 22.368,
+	"lane": 2
+  },
+  {
+	"spawn_time": 22.688,
+	"lane": 3
+  },
+  {
+	"spawn_time": 22.699,
+	"lane": 4
+  },
+  {
+	"spawn_time": 22.848,
+	"lane": 1
+  },
+  {
+	"spawn_time": 23.094,
+	"lane": 2
+  },
+  {
+	"spawn_time": 23.339,
+	"lane": 3
+  },
+  {
+	"spawn_time": 23.659,
+	"lane": 4
+  },
+  {
+	"spawn_time": 23.989,
+	"lane": 1
+  },
+  {
+	"spawn_time": 24.309,
+	"lane": 2
+  },
+  {
+	"spawn_time": 24.64,
+	"lane": 3
+  },
+  {
+	"spawn_time": 24.95,
+	"lane": 4
+  },
+  {
+	"spawn_time": 25.259,
+	"lane": 1
+  },
+  {
+	"spawn_time": 25.269,
+	"lane": 2
+  },
+  {
+	"spawn_time": 25.6,
+	"lane": 3
+  },
+  {
+	"spawn_time": 25.909,
+	"lane": 4
+  },
+  {
+	"spawn_time": 26.08,
+	"lane": 1
+  },
+  {
+	"spawn_time": 26.251,
+	"lane": 2
+  },
+  {
+	"spawn_time": 26.528,
+	"lane": 3
+  },
+  {
+	"spawn_time": 26.539,
+	"lane": 4
+  },
+  {
+	"spawn_time": 26.71,
+	"lane": 1
+  },
+  {
+	"spawn_time": 26.88,
+	"lane": 2
+  },
+  {
+	"spawn_time": 27.179,
+	"lane": 3
+  },
+  {
+	"spawn_time": 27.189,
+	"lane": 4
+  },
+  {
+	"spawn_time": 27.509,
+	"lane": 1
+  },
+  {
+	"spawn_time": 27.669,
+	"lane": 2
+  },
+  {
+	"spawn_time": 27.84,
+	"lane": 3
+  },
+  {
+	"spawn_time": 28.16,
+	"lane": 4
+  },
+  {
+	"spawn_time": 28.48,
+	"lane": 1
+  },
+  {
+	"spawn_time": 28.491,
+	"lane": 2
+  },
+  {
+	"spawn_time": 28.8,
+	"lane": 3
+  },
+  {
+	"spawn_time": 29.12,
+	"lane": 4
+  },
+  {
+	"spawn_time": 29.451,
+	"lane": 1
+  },
+  {
+	"spawn_time": 29.771,
+	"lane": 2
+  },
+  {
+	"spawn_time": 30.08,
+	"lane": 3
+  },
+  {
+	"spawn_time": 30.4,
+	"lane": 4
+  },
+  {
+	"spawn_time": 30.709,
+	"lane": 1
+  },
+  {
+	"spawn_time": 31.04,
+	"lane": 2
+  },
+  {
+	"spawn_time": 31.051,
+	"lane": 3
+  },
+  {
+	"spawn_time": 31.371,
+	"lane": 4
+  },
+  {
+	"spawn_time": 31.691,
+	"lane": 1
+  },
+  {
+	"spawn_time": 32.011,
+	"lane": 2
+  },
+  {
+	"spawn_time": 32.288,
+	"lane": 3
+  },
+  {
+	"spawn_time": 32.309,
+	"lane": 4
+  },
+  {
+	"spawn_time": 32.48,
+	"lane": 1
+  },
+  {
+	"spawn_time": 32.651,
+	"lane": 2
+  },
+  {
+	"spawn_time": 32.971,
+	"lane": 3
+  },
+  {
+	"spawn_time": 32.981,
+	"lane": 4
+  },
+  {
+	"spawn_time": 33.269,
+	"lane": 1
+  },
+  {
+	"spawn_time": 33.44,
+	"lane": 2
+  },
+  {
+	"spawn_time": 33.611,
+	"lane": 3
+  },
+  {
+	"spawn_time": 33.941,
+	"lane": 4
+  },
+  {
+	"spawn_time": 34.251,
+	"lane": 1
+  },
+  {
+	"spawn_time": 34.576,
+	"lane": 2
+  },
+  {
+	"spawn_time": 34.901,
+	"lane": 3
+  },
+  {
+	"spawn_time": 35.221,
+	"lane": 4
+  },
+  {
+	"spawn_time": 35.541,
+	"lane": 1
+  },
+  {
+	"spawn_time": 35.861,
+	"lane": 2
+  },
+  {
+	"spawn_time": 36.181,
+	"lane": 3
+  },
+  {
+	"spawn_time": 36.496,
+	"lane": 4
+  },
+  {
+	"spawn_time": 36.811,
+	"lane": 1
+  },
+  {
+	"spawn_time": 36.982,
+	"lane": 2
+  },
+  {
+	"spawn_time": 37.152,
+	"lane": 3
+  },
+  {
+	"spawn_time": 37.451,
+	"lane": 4
+  },
+  {
+	"spawn_time": 37.461,
+	"lane": 1
+  },
+  {
+	"spawn_time": 37.792,
+	"lane": 2
+  },
+  {
+	"spawn_time": 37.952,
+	"lane": 3
+  },
+  {
+	"spawn_time": 38.112,
+	"lane": 4
+  },
+  {
+	"spawn_time": 38.427,
+	"lane": 1
+  },
+  {
+	"spawn_time": 38.741,
+	"lane": 2
+  },
+  {
+	"spawn_time": 38.752,
+	"lane": 3
+  },
+  {
+	"spawn_time": 39.072,
+	"lane": 4
+  },
+  {
+	"spawn_time": 39.381,
+	"lane": 1
+  },
+  {
+	"spawn_time": 39.392,
+	"lane": 2
+  },
+  {
+	"spawn_time": 39.723,
+	"lane": 3
+  },
+  {
+	"spawn_time": 40.053,
+	"lane": 4
+  },
+  {
+	"spawn_time": 40.362,
+	"lane": 1
+  },
+  {
+	"spawn_time": 40.672,
+	"lane": 2
+  },
+  {
+	"spawn_time": 40.992,
+	"lane": 3
+  },
+  {
+	"spawn_time": 41.312,
+	"lane": 4
+  },
+  {
+	"spawn_time": 41.626,
+	"lane": 1
+  },
+  {
+	"spawn_time": 41.941,
+	"lane": 2
+  },
+  {
+	"spawn_time": 42.229,
+	"lane": 3
+  },
+  {
+	"spawn_time": 42.56,
+	"lane": 4
+  },
+  {
+	"spawn_time": 42.571,
+	"lane": 1
+  },
+  {
+	"spawn_time": 42.739,
+	"lane": 2
+  },
+  {
+	"spawn_time": 42.907,
+	"lane": 3
+  },
+  {
+	"spawn_time": 43.075,
+	"lane": 4
+  },
+  {
+	"spawn_time": 43.243,
+	"lane": 1
+  },
+  {
+	"spawn_time": 43.552,
+	"lane": 2
+  },
+  {
+	"spawn_time": 43.883,
+	"lane": 3
+  },
+  {
+	"spawn_time": 44.059,
+	"lane": 4
+  },
+  {
+	"spawn_time": 44.235,
+	"lane": 1
+  },
+  {
+	"spawn_time": 44.512,
+	"lane": 2
+  },
+  {
+	"spawn_time": 44.523,
+	"lane": 3
+  },
+  {
+	"spawn_time": 44.694,
+	"lane": 4
+  },
+  {
+	"spawn_time": 44.864,
+	"lane": 1
+  },
+  {
+	"spawn_time": 45.152,
+	"lane": 2
+  },
+  {
+	"spawn_time": 45.44,
+	"lane": 3
+  },
+  {
+	"spawn_time": 45.728,
+	"lane": 4
+  },
+  {
+	"spawn_time": 45.994,
+	"lane": 1
+  },
+  {
+	"spawn_time": 46.261,
+	"lane": 2
+  },
+  {
+	"spawn_time": 46.517,
+	"lane": 3
+  },
+  {
+	"spawn_time": 46.773,
+	"lane": 4
+  },
+  {
+	"spawn_time": 46.784,
+	"lane": 1
+  },
+  {
+	"spawn_time": 47.094,
+	"lane": 2
+  },
+  {
+	"spawn_time": 47.403,
+	"lane": 3
+  },
+  {
+	"spawn_time": 47.413,
+	"lane": 4
+  },
+  {
+	"spawn_time": 47.733,
+	"lane": 1
+  },
+  {
+	"spawn_time": 48.053,
+	"lane": 2
+  },
+  {
+	"spawn_time": 48.368,
+	"lane": 3
+  },
+  {
+	"spawn_time": 48.683,
+	"lane": 4
+  },
+  {
+	"spawn_time": 49.008,
+	"lane": 1
+  },
+  {
+	"spawn_time": 49.333,
+	"lane": 2
+  },
+  {
+	"spawn_time": 49.648,
+	"lane": 3
+  },
+  {
+	"spawn_time": 49.963,
+	"lane": 4
+  },
+  {
+	"spawn_time": 50.288,
+	"lane": 1
+  },
+  {
+	"spawn_time": 50.613,
+	"lane": 2
+  },
+  {
+	"spawn_time": 50.933,
+	"lane": 3
+  },
+  {
+	"spawn_time": 51.253,
+	"lane": 4
+  },
+  {
+	"spawn_time": 51.264,
+	"lane": 1
+  },
+  {
+	"spawn_time": 51.424,
+	"lane": 2
+  },
+  {
+	"spawn_time": 51.664,
+	"lane": 3
+  },
+  {
+	"spawn_time": 51.904,
+	"lane": 4
+  },
+  {
+	"spawn_time": 52.224,
+	"lane": 1
+  },
+  {
+	"spawn_time": 52.544,
+	"lane": 2
+  },
+  {
+	"spawn_time": 52.555,
+	"lane": 3
+  },
+  {
+	"spawn_time": 52.875,
+	"lane": 4
+  },
+  {
+	"spawn_time": 53.195,
+	"lane": 1
+  },
+  {
+	"spawn_time": 53.494,
+	"lane": 2
+  },
+  {
+	"spawn_time": 53.792,
+	"lane": 3
+  },
+  {
+	"spawn_time": 53.963,
+	"lane": 4
+  },
+  {
+	"spawn_time": 54.134,
+	"lane": 1
+  },
+  {
+	"spawn_time": 54.305,
+	"lane": 2
+  },
+  {
+	"spawn_time": 54.475,
+	"lane": 3
+  },
+  {
+	"spawn_time": 54.784,
+	"lane": 4
+  },
+  {
+	"spawn_time": 55.093,
+	"lane": 1
+  },
+  {
+	"spawn_time": 55.104,
+	"lane": 2
+  },
+  {
+	"spawn_time": 55.283,
+	"lane": 3
+  },
+  {
+	"spawn_time": 55.462,
+	"lane": 4
+  },
+  {
+	"spawn_time": 55.64,
+	"lane": 1
+  },
+  {
+	"spawn_time": 55.819,
+	"lane": 2
+  },
+  {
+	"spawn_time": 56.011,
+	"lane": 3
+  },
+  {
+	"spawn_time": 56.203,
+	"lane": 4
+  },
+  {
+	"spawn_time": 56.395,
+	"lane": 1
+  },
+  {
+	"spawn_time": 56.587,
+	"lane": 2
+  },
+  {
+	"spawn_time": 56.782,
+	"lane": 3
+  },
+  {
+	"spawn_time": 56.976,
+	"lane": 4
+  },
+  {
+	"spawn_time": 57.171,
+	"lane": 1
+  },
+  {
+	"spawn_time": 57.365,
+	"lane": 2
+  },
+  {
+	"spawn_time": 57.376,
+	"lane": 3
+  },
+  {
+	"spawn_time": 57.686,
+	"lane": 4
+  },
+  {
+	"spawn_time": 57.995,
+	"lane": 1
+  },
+  {
+	"spawn_time": 58.326,
+	"lane": 2
+  },
+  {
+	"spawn_time": 58.656,
+	"lane": 3
+  },
+  {
+	"spawn_time": 58.976,
+	"lane": 4
+  },
+  {
+	"spawn_time": 59.296,
+	"lane": 1
+  },
+  {
+	"spawn_time": 59.606,
+	"lane": 2
+  },
+  {
+	"spawn_time": 59.915,
+	"lane": 3
+  },
+  {
+	"spawn_time": 60.235,
+	"lane": 4
+  },
+  {
+	"spawn_time": 60.555,
+	"lane": 1
+  },
+  {
+	"spawn_time": 60.875,
+	"lane": 2
+  },
+  {
+	"spawn_time": 61.195,
+	"lane": 3
+  },
+  {
+	"spawn_time": 61.205,
+	"lane": 4
+  },
+  {
+	"spawn_time": 61.525,
+	"lane": 1
+  },
+  {
+	"spawn_time": 61.845,
+	"lane": 2
+  },
+  {
+	"spawn_time": 62.165,
+	"lane": 3
+  },
+  {
+	"spawn_time": 62.485,
+	"lane": 4
+  },
+  {
+	"spawn_time": 62.746,
+	"lane": 1
+  },
+  {
+	"spawn_time": 63.008,
+	"lane": 2
+  },
+  {
+	"spawn_time": 63.238,
+	"lane": 3
+  },
+  {
+	"spawn_time": 63.467,
+	"lane": 4
+  },
+  {
+	"spawn_time": 63.765,
+	"lane": 1
+  },
+  {
+	"spawn_time": 64.064,
+	"lane": 2
+  },
+  {
+	"spawn_time": 64.085,
+	"lane": 3
+  },
+  {
+	"spawn_time": 64.096,
+	"lane": 4
+  },
+  {
+	"spawn_time": 64.416,
+	"lane": 1
+  },
+  {
+	"spawn_time": 64.715,
+	"lane": 2
+  },
+  {
+	"spawn_time": 64.725,
+	"lane": 3
+  },
+  {
+	"spawn_time": 65.05,
+	"lane": 4
+  },
+  {
+	"spawn_time": 65.376,
+	"lane": 1
+  },
+  {
+	"spawn_time": 65.69,
+	"lane": 2
+  },
+  {
+	"spawn_time": 66.005,
+	"lane": 3
+  },
+  {
+	"spawn_time": 66.016,
+	"lane": 4
+  },
+  {
+	"spawn_time": 66.33,
+	"lane": 1
+  },
+  {
+	"spawn_time": 66.645,
+	"lane": 2
+  },
+  {
+	"spawn_time": 66.656,
+	"lane": 3
+  },
+  {
+	"spawn_time": 66.982,
+	"lane": 4
+  },
+  {
+	"spawn_time": 67.307,
+	"lane": 1
+  },
+  {
+	"spawn_time": 67.616,
+	"lane": 2
+  },
+  {
+	"spawn_time": 67.947,
+	"lane": 3
+  },
+  {
+	"spawn_time": 68.187,
+	"lane": 4
+  },
+  {
+	"spawn_time": 68.427,
+	"lane": 1
+  },
+  {
+	"spawn_time": 68.576,
+	"lane": 2
+  },
+  {
+	"spawn_time": 68.587,
+	"lane": 3
+  },
+  {
+	"spawn_time": 68.747,
+	"lane": 4
+  },
+  {
+	"spawn_time": 68.987,
+	"lane": 1
+  },
+  {
+	"spawn_time": 69.227,
+	"lane": 2
+  },
+  {
+	"spawn_time": 69.557,
+	"lane": 3
+  },
+  {
+	"spawn_time": 69.877,
+	"lane": 4
+  },
+  {
+	"spawn_time": 70.197,
+	"lane": 1
+  },
+  {
+	"spawn_time": 70.517,
+	"lane": 2
+  },
+  {
+	"spawn_time": 70.837,
+	"lane": 3
+  },
+  {
+	"spawn_time": 71.157,
+	"lane": 4
+  },
+  {
+	"spawn_time": 71.472,
+	"lane": 1
+  },
+  {
+	"spawn_time": 71.787,
+	"lane": 2
+  },
+  {
+	"spawn_time": 72.118,
+	"lane": 3
+  },
+  {
+	"spawn_time": 72.448,
+	"lane": 4
+  },
+  {
+	"spawn_time": 72.757,
+	"lane": 1
+  },
+  {
+	"spawn_time": 73.077,
+	"lane": 2
+  },
+  {
+	"spawn_time": 73.408,
+	"lane": 3
+  },
+  {
+	"spawn_time": 73.739,
+	"lane": 4
+  },
+  {
+	"spawn_time": 74.059,
+	"lane": 1
+  },
+  {
+	"spawn_time": 74.336,
+	"lane": 2
+  },
+  {
+	"spawn_time": 74.368,
+	"lane": 3
+  },
+  {
+	"spawn_time": 74.698,
+	"lane": 4
+  },
+  {
+	"spawn_time": 75.029,
+	"lane": 1
+  },
+  {
+	"spawn_time": 75.349,
+	"lane": 2
+  },
+  {
+	"spawn_time": 75.669,
+	"lane": 3
+  },
+  {
+	"spawn_time": 75.984,
+	"lane": 4
+  },
+  {
+	"spawn_time": 76.299,
+	"lane": 1
+  },
+  {
+	"spawn_time": 76.619,
+	"lane": 2
+  },
+  {
+	"spawn_time": 76.907,
+	"lane": 3
+  },
+  {
+	"spawn_time": 77.088,
+	"lane": 4
+  },
+  {
+	"spawn_time": 77.333,
+	"lane": 1
+  },
+  {
+	"spawn_time": 77.579,
+	"lane": 2
+  },
+  {
+	"spawn_time": 77.904,
+	"lane": 3
+  },
+  {
+	"spawn_time": 78.229,
+	"lane": 4
+  },
+  {
+	"spawn_time": 78.554,
+	"lane": 1
+  },
+  {
+	"spawn_time": 78.88,
+	"lane": 2
+  },
+  {
+	"spawn_time": 79.194,
+	"lane": 3
+  },
+  {
+	"spawn_time": 79.509,
+	"lane": 4
+  },
+  {
+	"spawn_time": 79.824,
+	"lane": 1
+  },
+  {
+	"spawn_time": 80.139,
+	"lane": 2
+  },
+  {
+	"spawn_time": 80.149,
+	"lane": 3
+  },
+  {
+	"spawn_time": 80.464,
+	"lane": 4
+  },
+  {
+	"spawn_time": 80.779,
+	"lane": 1
+  },
+  {
+	"spawn_time": 81.099,
+	"lane": 2
+  },
+  {
+	"spawn_time": 81.419,
+	"lane": 3
+  },
+  {
+	"spawn_time": 81.744,
+	"lane": 4
+  },
+  {
+	"spawn_time": 82.069,
+	"lane": 1
+  },
+  {
+	"spawn_time": 82.394,
+	"lane": 2
+  },
+  {
+	"spawn_time": 82.72,
+	"lane": 3
+  },
+  {
+	"spawn_time": 83.035,
+	"lane": 4
+  },
+  {
+	"spawn_time": 83.349,
+	"lane": 1
+  },
+  {
+	"spawn_time": 83.632,
+	"lane": 2
+  },
+  {
+	"spawn_time": 83.915,
+	"lane": 3
+  },
+  {
+	"spawn_time": 84.192,
+	"lane": 4
+  },
+  {
+	"spawn_time": 84.469,
+	"lane": 1
+  },
+  {
+	"spawn_time": 84.48,
+	"lane": 2
+  },
+  {
+	"spawn_time": 84.789,
+	"lane": 3
+  },
+  {
+	"spawn_time": 85.12,
+	"lane": 4
+  },
+  {
+	"spawn_time": 85.354,
+	"lane": 1
+  },
+  {
+	"spawn_time": 85.589,
+	"lane": 2
+  },
+  {
+	"spawn_time": 85.76,
+	"lane": 3
+  },
+  {
+	"spawn_time": 86.0,
+	"lane": 4
+  },
+  {
+	"spawn_time": 86.24,
+	"lane": 1
+  },
+  {
+	"spawn_time": 86.4,
+	"lane": 2
+  },
+  {
+	"spawn_time": 86.64,
+	"lane": 3
+  },
+  {
+	"spawn_time": 86.88,
+	"lane": 4
+  },
+  {
+	"spawn_time": 87.04,
+	"lane": 1
+  },
+  {
+	"spawn_time": 87.36,
+	"lane": 2
+  },
+  {
+	"spawn_time": 87.68,
+	"lane": 3
+  },
+  {
+	"spawn_time": 87.84,
+	"lane": 4
+  },
+  {
+	"spawn_time": 88.074,
+	"lane": 1
+  },
+  {
+	"spawn_time": 88.309,
+	"lane": 2
+  },
+  {
+	"spawn_time": 88.32,
+	"lane": 3
+  },
+  {
+	"spawn_time": 88.566,
+	"lane": 4
+  },
+  {
+	"spawn_time": 88.811,
+	"lane": 1
+  },
+  {
+	"spawn_time": 89.099,
+	"lane": 2
+  },
+  {
+	"spawn_time": 89.387,
+	"lane": 3
+  },
+  {
+	"spawn_time": 89.67,
+	"lane": 4
+  },
+  {
+	"spawn_time": 89.952,
+	"lane": 1
+  },
+  {
+	"spawn_time": 90.262,
+	"lane": 2
+  },
+  {
+	"spawn_time": 90.571,
+	"lane": 3
+  },
+  {
+	"spawn_time": 90.891,
+	"lane": 4
+  },
+  {
+	"spawn_time": 91.211,
+	"lane": 1
+  },
+  {
+	"spawn_time": 91.536,
+	"lane": 2
+  },
+  {
+	"spawn_time": 91.861,
+	"lane": 3
+  },
+  {
+	"spawn_time": 92.176,
+	"lane": 4
+  },
+  {
+	"spawn_time": 92.491,
+	"lane": 1
+  },
+  {
+	"spawn_time": 92.501,
+	"lane": 2
+  },
+  {
+	"spawn_time": 92.81,
+	"lane": 3
+  },
+  {
+	"spawn_time": 93.12,
+	"lane": 4
+  },
+  {
+	"spawn_time": 93.37,
+	"lane": 1
+  },
+  {
+	"spawn_time": 93.621,
+	"lane": 2
+  },
+  {
+	"spawn_time": 93.92,
+	"lane": 3
+  },
+  {
+	"spawn_time": 94.09,
+	"lane": 4
+  },
+  {
+	"spawn_time": 94.261,
+	"lane": 1
+  },
+  {
+	"spawn_time": 94.581,
+	"lane": 2
+  },
+  {
+	"spawn_time": 94.901,
+	"lane": 3
+  },
+  {
+	"spawn_time": 95.13,
+	"lane": 4
+  },
+  {
+	"spawn_time": 95.36,
+	"lane": 1
+  },
+  {
+	"spawn_time": 95.541,
+	"lane": 2
+  },
+  {
+	"spawn_time": 95.701,
+	"lane": 3
+  },
+  {
+	"spawn_time": 96.0,
+	"lane": 4
+  },
+  {
+	"spawn_time": 96.16,
+	"lane": 1
+  },
+  {
+	"spawn_time": 96.171,
+	"lane": 2
+  },
+  {
+	"spawn_time": 96.309,
+	"lane": 3
+  },
+  {
+	"spawn_time": 96.501,
+	"lane": 4
+  },
+  {
+	"spawn_time": 96.811,
+	"lane": 1
+  },
+  {
+	"spawn_time": 97.126,
+	"lane": 2
+  },
+  {
+	"spawn_time": 97.44,
+	"lane": 3
+  },
+  {
+	"spawn_time": 97.451,
+	"lane": 4
+  },
+  {
+	"spawn_time": 97.781,
+	"lane": 1
+  },
+  {
+	"spawn_time": 98.112,
+	"lane": 2
+  },
+  {
+	"spawn_time": 98.432,
+	"lane": 3
+  },
+  {
+	"spawn_time": 98.709,
+	"lane": 4
+  },
+  {
+	"spawn_time": 98.901,
+	"lane": 1
+  },
+  {
+	"spawn_time": 99.221,
+	"lane": 2
+  },
+  {
+	"spawn_time": 99.541,
+	"lane": 3
+  },
+  {
+	"spawn_time": 99.552,
+	"lane": 4
+  },
+  {
+	"spawn_time": 99.776,
+	"lane": 1
+  },
+  {
+	"spawn_time": 100.0,
+	"lane": 2
+  },
+  {
+	"spawn_time": 100.16,
+	"lane": 3
+  },
+  {
+	"spawn_time": 100.171,
+	"lane": 4
+  },
+  {
+	"spawn_time": 100.363,
+	"lane": 1
+  },
+  {
+	"spawn_time": 100.592,
+	"lane": 2
+  },
+  {
+	"spawn_time": 100.821,
+	"lane": 3
+  },
+  {
+	"spawn_time": 100.997,
+	"lane": 4
+  },
+  {
+	"spawn_time": 101.173,
+	"lane": 1
+  },
+  {
+	"spawn_time": 101.483,
+	"lane": 2
+  },
+  {
+	"spawn_time": 101.643,
+	"lane": 3
+  },
+  {
+	"spawn_time": 101.84,
+	"lane": 4
+  },
+  {
+	"spawn_time": 102.037,
+	"lane": 1
+  },
+  {
+	"spawn_time": 102.234,
+	"lane": 2
+  },
+  {
+	"spawn_time": 102.432,
+	"lane": 3
+  },
+  {
+	"spawn_time": 102.592,
+	"lane": 4
+  },
+  {
+	"spawn_time": 102.603,
+	"lane": 1
+  },
+  {
+	"spawn_time": 102.843,
+	"lane": 2
+  },
+  {
+	"spawn_time": 103.083,
+	"lane": 3
+  },
+  {
+	"spawn_time": 103.243,
+	"lane": 4
+  },
+  {
+	"spawn_time": 103.483,
+	"lane": 1
+  },
+  {
+	"spawn_time": 103.723,
+	"lane": 2
+  },
+  {
+	"spawn_time": 103.883,
+	"lane": 3
+  },
+  {
+	"spawn_time": 104.203,
+	"lane": 4
+  },
+  {
+	"spawn_time": 104.523,
+	"lane": 1
+  },
+  {
+	"spawn_time": 104.843,
+	"lane": 2
+  },
+  {
+	"spawn_time": 105.163,
+	"lane": 3
+  },
+  {
+	"spawn_time": 105.392,
+	"lane": 4
+  },
+  {
+	"spawn_time": 105.621,
+	"lane": 1
+  },
+  {
+	"spawn_time": 105.803,
+	"lane": 2
+  },
+  {
+	"spawn_time": 105.813,
+	"lane": 3
+  },
+  {
+	"spawn_time": 106.133,
+	"lane": 4
+  },
+  {
+	"spawn_time": 106.453,
+	"lane": 1
+  },
+  {
+	"spawn_time": 106.613,
+	"lane": 2
+  },
+  {
+	"spawn_time": 106.848,
+	"lane": 3
+  },
+  {
+	"spawn_time": 107.083,
+	"lane": 4
+  },
+  {
+	"spawn_time": 107.403,
+	"lane": 1
+  },
+  {
+	"spawn_time": 107.723,
+	"lane": 2
+  },
+  {
+	"spawn_time": 107.733,
+	"lane": 3
+  },
+  {
+	"spawn_time": 108.064,
+	"lane": 4
+  },
+  {
+	"spawn_time": 108.373,
+	"lane": 1
+  },
+  {
+	"spawn_time": 108.693,
+	"lane": 2
+  },
+  {
+	"spawn_time": 109.013,
+	"lane": 3
+  },
+  {
+	"spawn_time": 109.173,
+	"lane": 4
+  },
+  {
+	"spawn_time": 109.333,
+	"lane": 1
+  },
+  {
+	"spawn_time": 109.653,
+	"lane": 2
+  },
+  {
+	"spawn_time": 109.984,
+	"lane": 3
+  },
+  {
+	"spawn_time": 110.144,
+	"lane": 4
+  },
+  {
+	"spawn_time": 110.304,
+	"lane": 1
+  },
+  {
+	"spawn_time": 110.581,
+	"lane": 2
+  },
+  {
+	"spawn_time": 110.757,
+	"lane": 3
+  },
+  {
+	"spawn_time": 110.933,
+	"lane": 4
+  },
+  {
+	"spawn_time": 111.179,
+	"lane": 1
+  },
+  {
+	"spawn_time": 111.424,
+	"lane": 2
+  },
+  {
+	"spawn_time": 111.658,
+	"lane": 3
+  },
+  {
+	"spawn_time": 111.893,
+	"lane": 4
+  },
+  {
+	"spawn_time": 111.904,
+	"lane": 1
+  },
+  {
+	"spawn_time": 112.203,
+	"lane": 2
+  },
+  {
+	"spawn_time": 112.533,
+	"lane": 3
+  },
+  {
+	"spawn_time": 112.864,
+	"lane": 4
+  },
+  {
+	"spawn_time": 113.184,
+	"lane": 1
+  },
+  {
+	"spawn_time": 113.504,
+	"lane": 2
+  },
+  {
+	"spawn_time": 113.813,
+	"lane": 3
+  },
+  {
+	"spawn_time": 113.984,
+	"lane": 4
+  },
+  {
+	"spawn_time": 114.155,
+	"lane": 1
+  },
+  {
+	"spawn_time": 114.464,
+	"lane": 2
+  },
+  {
+	"spawn_time": 114.79,
+	"lane": 3
+  },
+  {
+	"spawn_time": 115.115,
+	"lane": 4
+  },
+  {
+	"spawn_time": 115.435,
+	"lane": 1
+  },
+  {
+	"spawn_time": 115.755,
+	"lane": 2
+  },
+  {
+	"spawn_time": 116.064,
+	"lane": 3
+  },
+  {
+	"spawn_time": 116.373,
+	"lane": 4
+  },
+  {
+	"spawn_time": 116.384,
+	"lane": 1
+  },
+  {
+	"spawn_time": 116.554,
+	"lane": 2
+  },
+  {
+	"spawn_time": 116.725,
+	"lane": 3
+  },
+  {
+	"spawn_time": 117.035,
+	"lane": 4
+  },
+  {
+	"spawn_time": 117.355,
+	"lane": 1
+  },
+  {
+	"spawn_time": 117.525,
+	"lane": 2
+  },
+  {
+	"spawn_time": 117.685,
+	"lane": 3
+  },
+  {
+	"spawn_time": 118.011,
+	"lane": 4
+  },
+  {
+	"spawn_time": 118.336,
+	"lane": 1
+  },
+  {
+	"spawn_time": 118.485,
+	"lane": 2
+  },
+  {
+	"spawn_time": 118.72,
+	"lane": 3
+  },
+  {
+	"spawn_time": 118.955,
+	"lane": 4
+  },
+  {
+	"spawn_time": 118.965,
+	"lane": 1
+  },
+  {
+	"spawn_time": 119.275,
+	"lane": 2
+  },
+  {
+	"spawn_time": 119.605,
+	"lane": 3
+  },
+  {
+	"spawn_time": 119.851,
+	"lane": 4
+  },
+  {
+	"spawn_time": 120.096,
+	"lane": 1
+  },
+  {
+	"spawn_time": 120.245,
+	"lane": 2
+  },
+  {
+	"spawn_time": 120.533,
+	"lane": 3
+  },
+  {
+	"spawn_time": 120.72,
+	"lane": 4
+  },
+  {
+	"spawn_time": 120.907,
+	"lane": 1
+  },
+  {
+	"spawn_time": 121.216,
+	"lane": 2
+  },
+  {
+	"spawn_time": 121.525,
+	"lane": 3
+  },
+  {
+	"spawn_time": 121.845,
+	"lane": 4
+  },
+  {
+	"spawn_time": 122.165,
+	"lane": 1
+  },
+  {
+	"spawn_time": 122.485,
+	"lane": 2
+  },
+  {
+	"spawn_time": 122.805,
+	"lane": 3
+  },
+  {
+	"spawn_time": 123.115,
+	"lane": 4
+  },
+  {
+	"spawn_time": 123.286,
+	"lane": 1
+  },
+  {
+	"spawn_time": 123.456,
+	"lane": 2
+  },
+  {
+	"spawn_time": 123.76,
+	"lane": 3
+  },
+  {
+	"spawn_time": 124.064,
+	"lane": 4
+  },
+  {
+	"spawn_time": 124.085,
+	"lane": 1
+  },
+  {
+	"spawn_time": 124.253,
+	"lane": 2
+  },
+  {
+	"spawn_time": 124.421,
+	"lane": 3
+  },
+  {
+	"spawn_time": 124.589,
+	"lane": 4
+  },
+  {
+	"spawn_time": 124.757,
+	"lane": 1
+  },
+  {
+	"spawn_time": 125.066,
+	"lane": 2
+  },
+  {
+	"spawn_time": 125.376,
+	"lane": 3
+  },
+  {
+	"spawn_time": 125.544,
+	"lane": 4
+  },
+  {
+	"spawn_time": 125.712,
+	"lane": 1
+  },
+  {
+	"spawn_time": 125.88,
+	"lane": 2
+  },
+  {
+	"spawn_time": 126.048,
+	"lane": 3
+  },
+  {
+	"spawn_time": 126.358,
+	"lane": 4
+  },
+  {
+	"spawn_time": 126.667,
+	"lane": 1
+  },
+  {
+	"spawn_time": 126.982,
+	"lane": 2
+  },
+  {
+	"spawn_time": 127.296,
+	"lane": 3
+  },
+  {
+	"spawn_time": 127.307,
+	"lane": 4
+  },
+  {
+	"spawn_time": 127.616,
+	"lane": 1
+  },
+  {
+	"spawn_time": 127.947,
+	"lane": 2
+  },
+  {
+	"spawn_time": 128.256,
+	"lane": 3
+  },
+  {
+	"spawn_time": 128.426,
+	"lane": 4
+  },
+  {
+	"spawn_time": 128.597,
+	"lane": 1
+  },
+  {
+	"spawn_time": 128.912,
+	"lane": 2
+  },
+  {
+	"spawn_time": 129.227,
+	"lane": 3
+  },
+  {
+	"spawn_time": 129.237,
+	"lane": 4
+  },
+  {
+	"spawn_time": 129.557,
+	"lane": 1
+  },
+  {
+	"spawn_time": 129.888,
+	"lane": 2
+  },
+  {
+	"spawn_time": 130.202,
+	"lane": 3
+  },
+  {
+	"spawn_time": 130.517,
+	"lane": 4
+  },
+  {
+	"spawn_time": 130.832,
+	"lane": 1
+  },
+  {
+	"spawn_time": 131.147,
+	"lane": 2
+  },
+  {
+	"spawn_time": 131.435,
+	"lane": 3
+  },
+  {
+	"spawn_time": 131.723,
+	"lane": 4
+  },
+  {
+	"spawn_time": 131.915,
+	"lane": 1
+  },
+  {
+	"spawn_time": 132.107,
+	"lane": 2
+  },
+  {
+	"spawn_time": 132.437,
+	"lane": 3
+  },
+  {
+	"spawn_time": 132.757,
+	"lane": 4
+  },
+  {
+	"spawn_time": 133.077,
+	"lane": 1
+  },
+  {
+	"spawn_time": 133.386,
+	"lane": 2
+  },
+  {
+	"spawn_time": 133.696,
+	"lane": 3
+  },
+  {
+	"spawn_time": 134.026,
+	"lane": 4
+  },
+  {
+	"spawn_time": 134.357,
+	"lane": 1
+  },
+  {
+	"spawn_time": 134.666,
+	"lane": 2
+  },
+  {
+	"spawn_time": 134.976,
+	"lane": 3
+  },
+  {
+	"spawn_time": 134.987,
+	"lane": 4
+  },
+  {
+	"spawn_time": 135.232,
+	"lane": 1
+  },
+  {
+	"spawn_time": 135.477,
+	"lane": 2
+  },
+  {
+	"spawn_time": 135.722,
+	"lane": 3
+  },
+  {
+	"spawn_time": 135.968,
+	"lane": 4
+  },
+  {
+	"spawn_time": 135.979,
+	"lane": 1
+  },
+  {
+	"spawn_time": 136.267,
+	"lane": 2
+  },
+  {
+	"spawn_time": 136.597,
+	"lane": 3
+  },
+  {
+	"spawn_time": 136.608,
+	"lane": 4
+  },
+  {
+	"spawn_time": 136.922,
+	"lane": 1
+  },
+  {
+	"spawn_time": 137.237,
+	"lane": 2
+  },
+  {
+	"spawn_time": 137.557,
+	"lane": 3
+  },
+  {
+	"spawn_time": 137.877,
+	"lane": 4
+  },
+  {
+	"spawn_time": 137.888,
+	"lane": 1
+  },
+  {
+	"spawn_time": 138.202,
+	"lane": 2
+  },
+  {
+	"spawn_time": 138.517,
+	"lane": 3
+  },
+  {
+	"spawn_time": 138.528,
+	"lane": 4
+  },
+  {
+	"spawn_time": 138.854,
+	"lane": 1
+  },
+  {
+	"spawn_time": 139.179,
+	"lane": 2
+  },
+  {
+	"spawn_time": 139.499,
+	"lane": 3
+  },
+  {
+	"spawn_time": 139.819,
+	"lane": 4
+  },
+  {
+	"spawn_time": 140.128,
+	"lane": 1
+  },
+  {
+	"spawn_time": 140.459,
+	"lane": 2
+  },
+  {
+	"spawn_time": 140.774,
+	"lane": 3
+  },
+  {
+	"spawn_time": 141.088,
+	"lane": 4
+  },
+  {
+	"spawn_time": 141.099,
+	"lane": 1
+  },
+  {
+	"spawn_time": 141.419,
+	"lane": 2
+  },
+  {
+	"spawn_time": 141.739,
+	"lane": 3
+  },
+  {
+	"spawn_time": 142.059,
+	"lane": 4
+  },
+  {
+	"spawn_time": 142.389,
+	"lane": 1
+  },
+  {
+	"spawn_time": 142.709,
+	"lane": 2
+  },
+  {
+	"spawn_time": 143.029,
+	"lane": 3
+  },
+  {
+	"spawn_time": 143.2,
+	"lane": 4
+  },
+  {
+	"spawn_time": 143.43,
+	"lane": 1
+  },
+  {
+	"spawn_time": 143.659,
+	"lane": 2
+  },
+  {
+	"spawn_time": 143.808,
+	"lane": 3
+  },
+  {
+	"spawn_time": 143.989,
+	"lane": 4
+  },
+  {
+	"spawn_time": 144.309,
+	"lane": 1
+  },
+  {
+	"spawn_time": 144.629,
+	"lane": 2
+  },
+  {
+	"spawn_time": 144.853,
+	"lane": 3
+  },
+  {
+	"spawn_time": 144.949,
+	"lane": 4
+  },
+  {
+	"spawn_time": 145.168,
+	"lane": 1
+  },
+  {
+	"spawn_time": 145.387,
+	"lane": 2
+  },
+  {
+	"spawn_time": 145.654,
+	"lane": 3
+  },
+  {
+	"spawn_time": 145.92,
+	"lane": 4
+  },
+  {
+	"spawn_time": 146.24,
+	"lane": 1
+  },
+  {
+	"spawn_time": 146.56,
+	"lane": 2
+  },
+  {
+	"spawn_time": 146.88,
+	"lane": 3
+  },
+  {
+	"spawn_time": 147.2,
+	"lane": 4
+  },
+  {
+	"spawn_time": 147.514,
+	"lane": 1
+  },
+  {
+	"spawn_time": 147.829,
+	"lane": 2
+  },
+  {
+	"spawn_time": 147.84,
+	"lane": 3
+  },
+  {
+	"spawn_time": 148.16,
+	"lane": 4
+  },
+  {
+	"spawn_time": 148.48,
+	"lane": 1
+  },
+  {
+	"spawn_time": 148.72,
+	"lane": 2
+  },
+  {
+	"spawn_time": 148.96,
+	"lane": 3
+  },
+  {
+	"spawn_time": 149.131,
+	"lane": 4
+  },
+  {
+	"spawn_time": 149.44,
+	"lane": 1
+  },
+  {
+	"spawn_time": 149.749,
+	"lane": 2
+  },
+  {
+	"spawn_time": 150.08,
+	"lane": 3
+  },
+  {
+	"spawn_time": 150.411,
+	"lane": 4
+  },
+  {
+	"spawn_time": 150.736,
+	"lane": 1
+  },
+  {
+	"spawn_time": 151.061,
+	"lane": 2
+  },
+  {
+	"spawn_time": 151.381,
+	"lane": 3
+  },
+  {
+	"spawn_time": 151.701,
+	"lane": 4
+  },
+  {
+	"spawn_time": 152.021,
+	"lane": 1
+  },
+  {
+	"spawn_time": 152.341,
+	"lane": 2
+  },
+  {
+	"spawn_time": 152.651,
+	"lane": 3
+  },
+  {
+	"spawn_time": 152.971,
+	"lane": 4
+  },
+  {
+	"spawn_time": 153.296,
+	"lane": 1
+  },
+  {
+	"spawn_time": 153.621,
+	"lane": 2
+  },
+  {
+	"spawn_time": 153.941,
+	"lane": 3
+  },
+  {
+	"spawn_time": 154.261,
+	"lane": 4
+  },
+  {
+	"spawn_time": 154.581,
+	"lane": 1
+  },
+  {
+	"spawn_time": 154.901,
+	"lane": 2
+  },
+  {
+	"spawn_time": 155.211,
+	"lane": 3
+  },
+  {
+	"spawn_time": 155.531,
+	"lane": 4
+  },
+  {
+	"spawn_time": 155.856,
+	"lane": 1
+  },
+  {
+	"spawn_time": 156.181,
+	"lane": 2
+  },
+  {
+	"spawn_time": 156.507,
+	"lane": 3
+  },
+  {
+	"spawn_time": 156.832,
+	"lane": 4
+  },
+  {
+	"spawn_time": 157.152,
+	"lane": 1
+  },
+  {
+	"spawn_time": 157.472,
+	"lane": 2
+  },
+  {
+	"spawn_time": 157.792,
+	"lane": 3
+  },
+  {
+	"spawn_time": 158.112,
+	"lane": 4
+  },
+  {
+	"spawn_time": 158.432,
+	"lane": 1
+  },
+  {
+	"spawn_time": 158.752,
+	"lane": 2
+  },
+  {
+	"spawn_time": 159.078,
+	"lane": 3
+  },
+  {
+	"spawn_time": 159.403,
+	"lane": 4
+  },
+  {
+	"spawn_time": 159.723,
+	"lane": 1
+  },
+  {
+	"spawn_time": 160.043,
+	"lane": 2
+  },
+  {
+	"spawn_time": 160.363,
+	"lane": 3
+  },
+  {
+	"spawn_time": 160.683,
+	"lane": 4
+  },
+  {
+	"spawn_time": 161.014,
+	"lane": 1
+  },
+  {
+	"spawn_time": 161.344,
+	"lane": 2
+  },
+  {
+	"spawn_time": 161.664,
+	"lane": 3
+  },
+  {
+	"spawn_time": 161.984,
+	"lane": 4
+  },
+  {
+	"spawn_time": 162.224,
+	"lane": 1
+  },
+  {
+	"spawn_time": 162.464,
+	"lane": 2
+  },
+  {
+	"spawn_time": 162.624,
+	"lane": 3
+  },
+  {
+	"spawn_time": 162.923,
+	"lane": 4
+  },
+  {
+	"spawn_time": 163.243,
+	"lane": 1
+  },
+  {
+	"spawn_time": 163.552,
+	"lane": 2
+  },
+  {
+	"spawn_time": 163.723,
+	"lane": 3
+  },
+  {
+	"spawn_time": 163.893,
+	"lane": 4
+  },
+  {
+	"spawn_time": 164.053,
+	"lane": 1
+  },
+  {
+	"spawn_time": 164.235,
+	"lane": 2
+  },
+  {
+	"spawn_time": 164.533,
+	"lane": 3
+  },
+  {
+	"spawn_time": 164.853,
+	"lane": 4
+  },
+  {
+	"spawn_time": 165.163,
+	"lane": 1
+  },
+  {
+	"spawn_time": 165.173,
+	"lane": 2
+  },
+  {
+	"spawn_time": 165.333,
+	"lane": 3
+  },
+  {
+	"spawn_time": 165.483,
+	"lane": 4
+  },
+  {
+	"spawn_time": 165.653,
+	"lane": 1
+  },
+  {
+	"spawn_time": 165.813,
+	"lane": 2
+  },
+  {
+	"spawn_time": 166.123,
+	"lane": 3
+  },
+  {
+	"spawn_time": 166.443,
+	"lane": 4
+  },
+  {
+	"spawn_time": 166.688,
+	"lane": 1
+  },
+  {
+	"spawn_time": 166.933,
+	"lane": 2
+  },
+  {
+	"spawn_time": 167.072,
+	"lane": 3
+  },
+  {
+	"spawn_time": 167.253,
+	"lane": 4
+  },
+  {
+	"spawn_time": 167.413,
+	"lane": 1
+  },
+  {
+	"spawn_time": 167.723,
+	"lane": 2
+  },
+  {
+	"spawn_time": 168.048,
+	"lane": 3
+  },
+  {
+	"spawn_time": 168.373,
+	"lane": 4
+  },
+  {
+	"spawn_time": 168.693,
+	"lane": 1
+  },
+  {
+	"spawn_time": 168.864,
+	"lane": 2
+  },
+  {
+	"spawn_time": 169.035,
+	"lane": 3
+  },
+  {
+	"spawn_time": 169.349,
+	"lane": 4
+  },
+  {
+	"spawn_time": 169.664,
+	"lane": 1
+  },
+  {
+	"spawn_time": 169.99,
+	"lane": 2
+  },
+  {
+	"spawn_time": 170.315,
+	"lane": 3
+  },
+  {
+	"spawn_time": 170.635,
+	"lane": 4
+  },
+  {
+	"spawn_time": 170.955,
+	"lane": 1
+  },
+  {
+	"spawn_time": 171.27,
+	"lane": 2
+  },
+  {
+	"spawn_time": 171.584,
+	"lane": 3
+  },
+  {
+	"spawn_time": 171.914,
+	"lane": 4
+  },
+  {
+	"spawn_time": 172.245,
+	"lane": 1
+  },
+  {
+	"spawn_time": 172.57,
+	"lane": 2
+  },
+  {
+	"spawn_time": 172.896,
+	"lane": 3
+  },
+  {
+	"spawn_time": 173.205,
+	"lane": 4
+  },
+  {
+	"spawn_time": 173.515,
+	"lane": 1
+  },
+  {
+	"spawn_time": 173.83,
+	"lane": 2
+  },
+  {
+	"spawn_time": 174.144,
+	"lane": 3
+  },
+  {
+	"spawn_time": 174.474,
+	"lane": 4
+  },
+  {
+	"spawn_time": 174.805,
+	"lane": 1
+  },
+  {
+	"spawn_time": 175.12,
+	"lane": 2
+  },
+  {
+	"spawn_time": 175.435,
+	"lane": 3
+  },
+  {
+	"spawn_time": 175.755,
+	"lane": 4
+  },
+  {
+	"spawn_time": 176.075,
+	"lane": 1
+  },
+  {
+	"spawn_time": 176.4,
+	"lane": 2
+  },
+  {
+	"spawn_time": 176.725,
+	"lane": 3
+  },
+  {
+	"spawn_time": 177.045,
+	"lane": 4
+  },
+  {
+	"spawn_time": 177.365,
+	"lane": 1
+  },
+  {
+	"spawn_time": 177.685,
+	"lane": 2
+  },
+  {
+	"spawn_time": 178.005,
+	"lane": 3
+  },
+  {
+	"spawn_time": 178.336,
+	"lane": 4
+  },
+  {
+	"spawn_time": 178.667,
+	"lane": 1
+  },
+  {
+	"spawn_time": 178.981,
+	"lane": 2
+  },
+  {
+	"spawn_time": 179.296,
+	"lane": 3
+  },
+  {
+	"spawn_time": 179.616,
+	"lane": 4
+  },
+  {
+	"spawn_time": 179.936,
+	"lane": 1
+  },
+  {
+	"spawn_time": 180.256,
+	"lane": 2
+  },
+  {
+	"spawn_time": 180.576,
+	"lane": 3
+  },
+  {
+	"spawn_time": 180.896,
+	"lane": 4
+  },
+  {
+	"spawn_time": 181.216,
+	"lane": 1
+  },
+  {
+	"spawn_time": 181.536,
+	"lane": 2
+  },
+  {
+	"spawn_time": 181.856,
+	"lane": 3
+  },
+  {
+	"spawn_time": 182.176,
+	"lane": 4
+  },
+  {
+	"spawn_time": 182.496,
+	"lane": 1
+  },
+  {
+	"spawn_time": 182.822,
+	"lane": 2
+  },
+  {
+	"spawn_time": 183.147,
+	"lane": 3
+  },
+  {
+	"spawn_time": 183.467,
+	"lane": 4
+  },
+  {
+	"spawn_time": 183.787,
+	"lane": 1
+  },
+  {
+	"spawn_time": 184.102,
+	"lane": 2
+  },
+  {
+	"spawn_time": 184.416,
+	"lane": 3
+  },
+  {
+	"spawn_time": 184.736,
+	"lane": 4
+  },
+  {
+	"spawn_time": 185.056,
+	"lane": 1
+  },
+  {
+	"spawn_time": 185.382,
+	"lane": 2
+  },
+  {
+	"spawn_time": 185.707,
+	"lane": 3
+  },
+  {
+	"spawn_time": 186.032,
+	"lane": 4
+  },
+  {
+	"spawn_time": 186.357,
+	"lane": 1
+  },
+  {
+	"spawn_time": 186.672,
+	"lane": 2
+  },
+  {
+	"spawn_time": 186.987,
+	"lane": 3
+  },
+  {
+	"spawn_time": 187.302,
+	"lane": 4
+  },
+  {
+	"spawn_time": 187.616,
+	"lane": 1
+  },
+  {
+	"spawn_time": 187.914,
+	"lane": 2
+  },
+  {
+	"spawn_time": 188.213,
+	"lane": 3
+  },
+  {
+	"spawn_time": 188.517,
+	"lane": 4
+  },
+  {
+	"spawn_time": 188.821,
+	"lane": 1
+  },
+  {
+	"spawn_time": 189.125,
+	"lane": 2
+  },
+  {
+	"spawn_time": 189.429,
+	"lane": 3
+  },
+  {
+	"spawn_time": 189.733,
+	"lane": 4
+  },
+  {
+	"spawn_time": 190.037,
+	"lane": 1
+  },
+  {
+	"spawn_time": 190.229,
+	"lane": 2
+  },
+  {
+	"spawn_time": 190.421,
+	"lane": 3
+  },
+  {
+	"spawn_time": 190.528,
+	"lane": 4
+  },
+  {
+	"spawn_time": 190.859,
+	"lane": 1
+  },
+  {
+	"spawn_time": 191.168,
+	"lane": 2
+  },
+  {
+	"spawn_time": 191.483,
+	"lane": 3
+  },
+  {
+	"spawn_time": 191.797,
+	"lane": 4
+  },
+  {
+	"spawn_time": 192.011,
+	"lane": 1
+  },
+  {
+	"spawn_time": 192.219,
+	"lane": 2
+  },
+  {
+	"spawn_time": 192.427,
+	"lane": 3
+  },
+  {
+	"spawn_time": 192.757,
+	"lane": 4
+  },
+  {
+	"spawn_time": 193.077,
+	"lane": 1
+  },
+  {
+	"spawn_time": 193.088,
+	"lane": 2
+  },
+  {
+	"spawn_time": 193.387,
+	"lane": 3
+  },
+  {
+	"spawn_time": 193.574,
+	"lane": 4
+  },
+  {
+	"spawn_time": 193.76,
+	"lane": 1
+  },
+  {
+	"spawn_time": 193.909,
+	"lane": 2
+  },
+  {
+	"spawn_time": 194.144,
+	"lane": 3
+  },
+  {
+	"spawn_time": 194.379,
+	"lane": 4
+  },
+  {
+	"spawn_time": 194.656,
+	"lane": 1
+  },
+  {
+	"spawn_time": 194.826,
+	"lane": 2
+  },
+  {
+	"spawn_time": 194.997,
+	"lane": 3
+  },
+  {
+	"spawn_time": 195.008,
+	"lane": 4
+  },
+  {
+	"spawn_time": 195.307,
+	"lane": 1
+  },
+  {
+	"spawn_time": 195.637,
+	"lane": 2
+  },
+  {
+	"spawn_time": 195.968,
+	"lane": 3
+  },
+  {
+	"spawn_time": 196.288,
+	"lane": 4
+  },
+  {
+	"spawn_time": 196.608,
+	"lane": 1
+  },
+  {
+	"spawn_time": 196.736,
+	"lane": 2
+  },
+  {
+	"spawn_time": 196.939,
+	"lane": 3
+  },
+  {
+	"spawn_time": 197.248,
+	"lane": 4
+  },
+  {
+	"spawn_time": 197.557,
+	"lane": 1
+  },
+  {
+	"spawn_time": 197.568,
+	"lane": 2
+  },
+  {
+	"spawn_time": 197.888,
+	"lane": 3
+  },
+  {
+	"spawn_time": 198.069,
+	"lane": 4
+  },
+  {
+	"spawn_time": 198.187,
+	"lane": 1
+  },
+  {
+	"spawn_time": 198.197,
+	"lane": 2
+  },
+  {
+	"spawn_time": 198.528,
+	"lane": 3
+  },
+  {
+	"spawn_time": 198.859,
+	"lane": 4
+  },
+  {
+	"spawn_time": 199.184,
+	"lane": 1
+  },
+  {
+	"spawn_time": 199.509,
+	"lane": 2
+  },
+  {
+	"spawn_time": 199.824,
+	"lane": 3
+  },
+  {
+	"spawn_time": 200.139,
+	"lane": 4
+  },
+  {
+	"spawn_time": 200.448,
+	"lane": 1
+  },
+  {
+	"spawn_time": 200.63,
+	"lane": 2
+  },
+  {
+	"spawn_time": 200.811,
+	"lane": 3
+  },
+  {
+	"spawn_time": 201.147,
+	"lane": 4
+  },
+  {
+	"spawn_time": 201.315,
+	"lane": 1
+  },
+  {
+	"spawn_time": 201.483,
+	"lane": 2
+  },
+  {
+	"spawn_time": 201.782,
+	"lane": 3
+  },
+  {
+	"spawn_time": 202.08,
+	"lane": 4
+  },
+  {
+	"spawn_time": 202.229,
+	"lane": 1
+  },
+  {
+	"spawn_time": 202.549,
+	"lane": 2
+  },
+  {
+	"spawn_time": 202.709,
+	"lane": 3
+  },
+  {
+	"spawn_time": 203.019,
+	"lane": 4
+  },
+  {
+	"spawn_time": 203.328,
+	"lane": 1
+  },
+  {
+	"spawn_time": 203.339,
+	"lane": 2
+  },
+  {
+	"spawn_time": 203.664,
+	"lane": 3
+  },
+  {
+	"spawn_time": 203.989,
+	"lane": 4
+  },
+  {
+	"spawn_time": 204.309,
+	"lane": 1
+  },
+  {
+	"spawn_time": 204.629,
+	"lane": 2
+  },
+  {
+	"spawn_time": 204.928,
+	"lane": 3
+  },
+  {
+	"spawn_time": 205.227,
+	"lane": 4
+  },
+  {
+	"spawn_time": 205.563,
+	"lane": 1
+  },
+  {
+	"spawn_time": 205.731,
+	"lane": 2
+  },
+  {
+	"spawn_time": 205.899,
+	"lane": 3
+  },
+  {
+	"spawn_time": 205.909,
+	"lane": 4
+  },
+  {
+	"spawn_time": 206.224,
+	"lane": 1
+  },
+  {
+	"spawn_time": 206.539,
+	"lane": 2
+  },
+  {
+	"spawn_time": 206.811,
+	"lane": 3
+  },
+  {
+	"spawn_time": 207.083,
+	"lane": 4
+  },
+  {
+	"spawn_time": 207.344,
+	"lane": 1
+  },
+  {
+	"spawn_time": 207.605,
+	"lane": 2
+  },
+  {
+	"spawn_time": 207.888,
+	"lane": 3
+  },
+  {
+	"spawn_time": 208.171,
+	"lane": 4
+  },
+  {
+	"spawn_time": 208.48,
+	"lane": 1
+  },
+  {
+	"spawn_time": 208.789,
+	"lane": 2
+  },
+  {
+	"spawn_time": 209.098,
+	"lane": 3
+  },
+  {
+	"spawn_time": 209.408,
+	"lane": 4
+  },
+  {
+	"spawn_time": 209.738,
+	"lane": 1
+  },
+  {
+	"spawn_time": 210.069,
+	"lane": 2
+  },
+  {
+	"spawn_time": 210.08,
+	"lane": 3
+  },
+  {
+	"spawn_time": 210.4,
+	"lane": 4
+  },
+  {
+	"spawn_time": 210.72,
+	"lane": 1
+  },
+  {
+	"spawn_time": 211.046,
+	"lane": 2
+  },
+  {
+	"spawn_time": 211.371,
+	"lane": 3
+  },
+  {
+	"spawn_time": 211.691,
+	"lane": 4
+  },
+  {
+	"spawn_time": 212.011,
+	"lane": 1
+  },
+  {
+	"spawn_time": 212.331,
+	"lane": 2
+  },
+  {
+	"spawn_time": 212.651,
+	"lane": 3
+  },
+  {
+	"spawn_time": 212.971,
+	"lane": 4
+  },
+  {
+	"spawn_time": 213.291,
+	"lane": 1
+  },
+  {
+	"spawn_time": 213.606,
+	"lane": 2
+  },
+  {
+	"spawn_time": 213.92,
+	"lane": 3
+  },
+  {
+	"spawn_time": 214.24,
+	"lane": 4
+  },
+  {
+	"spawn_time": 214.56,
+	"lane": 1
+  },
+  {
+	"spawn_time": 214.89,
+	"lane": 2
+  },
+  {
+	"spawn_time": 215.221,
+	"lane": 3
+  },
+  {
+	"spawn_time": 215.546,
+	"lane": 4
+  },
+  {
+	"spawn_time": 215.872,
+	"lane": 1
+  },
+  {
+	"spawn_time": 216.198,
+	"lane": 2
+  },
+  {
+	"spawn_time": 216.523,
+	"lane": 3
+  },
+  {
+	"spawn_time": 216.718,
+	"lane": 4
+  },
+  {
+	"spawn_time": 216.912,
+	"lane": 1
+  },
+  {
+	"spawn_time": 217.106,
+	"lane": 2
+  },
+  {
+	"spawn_time": 217.301,
+	"lane": 3
+  },
+  {
+	"spawn_time": 217.501,
+	"lane": 4
+  },
+  {
+	"spawn_time": 217.701,
+	"lane": 1
+  },
+  {
+	"spawn_time": 217.901,
+	"lane": 2
+  },
+  {
+	"spawn_time": 218.101,
+	"lane": 3
+  },
+  {
+	"spawn_time": 218.112,
+	"lane": 4
+  },
+  {
+	"spawn_time": 218.336,
+	"lane": 1
+  },
+  {
+	"spawn_time": 218.544,
+	"lane": 2
+  },
+  {
+	"spawn_time": 218.752,
+	"lane": 3
+  },
+  {
+	"spawn_time": 219.078,
+	"lane": 4
+  },
+  {
+	"spawn_time": 219.403,
+	"lane": 1
+  },
+  {
+	"spawn_time": 219.718,
+	"lane": 2
+  },
+  {
+	"spawn_time": 220.032,
+	"lane": 3
+  },
+  {
+	"spawn_time": 220.358,
+	"lane": 4
+  },
+  {
+	"spawn_time": 220.683,
+	"lane": 1
+  },
+  {
+	"spawn_time": 221.003,
+	"lane": 2
+  },
+  {
+	"spawn_time": 221.323,
+	"lane": 3
+  },
+  {
+	"spawn_time": 221.643,
+	"lane": 4
+  },
+  {
+	"spawn_time": 221.963,
+	"lane": 1
+  },
+  {
+	"spawn_time": 222.198,
+	"lane": 2
+  },
+  {
+	"spawn_time": 222.432,
+	"lane": 3
+  },
+  {
+	"spawn_time": 222.592,
+	"lane": 4
+  },
+  {
+	"spawn_time": 222.918,
+	"lane": 1
+  },
+  {
+	"spawn_time": 223.243,
+	"lane": 2
+  },
+  {
+	"spawn_time": 223.563,
+	"lane": 3
+  },
+  {
+	"spawn_time": 223.883,
+	"lane": 4
+  },
+  {
+	"spawn_time": 224.208,
+	"lane": 1
+  },
+  {
+	"spawn_time": 224.533,
+	"lane": 2
+  },
+  {
+	"spawn_time": 224.843,
+	"lane": 3
+  },
+  {
+	"spawn_time": 225.173,
+	"lane": 4
+  },
+  {
+	"spawn_time": 225.493,
+	"lane": 1
+  },
+  {
+	"spawn_time": 225.813,
+	"lane": 2
+  },
+  {
+	"spawn_time": 226.133,
+	"lane": 3
+  },
+  {
+	"spawn_time": 226.453,
+	"lane": 4
+  },
+  {
+	"spawn_time": 226.773,
+	"lane": 1
+  },
+  {
+	"spawn_time": 227.093,
+	"lane": 2
+  },
+  {
+	"spawn_time": 227.424,
+	"lane": 3
+  },
+  {
+	"spawn_time": 227.744,
+	"lane": 4
+  },
+  {
+	"spawn_time": 228.064,
+	"lane": 1
+  },
+  {
+	"spawn_time": 228.373,
+	"lane": 2
+  },
+  {
+	"spawn_time": 228.533,
+	"lane": 3
+  },
+  {
+	"spawn_time": 228.704,
+	"lane": 4
+  },
+  {
+	"spawn_time": 229.003,
+	"lane": 1
+  },
+  {
+	"spawn_time": 229.334,
+	"lane": 2
+  },
+  {
+	"spawn_time": 229.664,
+	"lane": 3
+  },
+  {
+	"spawn_time": 229.984,
+	"lane": 4
+  },
+  {
+	"spawn_time": 230.304,
+	"lane": 1
+  },
+  {
+	"spawn_time": 230.618,
+	"lane": 2
+  },
+  {
+	"spawn_time": 230.933,
+	"lane": 3
+  },
+  {
+	"spawn_time": 230.944,
+	"lane": 4
+  },
+  {
+	"spawn_time": 231.264,
+	"lane": 1
+  },
+  {
+	"spawn_time": 231.584,
+	"lane": 2
+  },
+  {
+	"spawn_time": 231.91,
+	"lane": 3
+  },
+  {
+	"spawn_time": 232.235,
+	"lane": 4
+  },
+  {
+	"spawn_time": 232.555,
+	"lane": 1
+  },
+  {
+	"spawn_time": 232.875,
+	"lane": 2
+  },
+  {
+	"spawn_time": 233.195,
+	"lane": 3
+  },
+  {
+	"spawn_time": 233.515,
+	"lane": 4
+  },
+  {
+	"spawn_time": 233.83,
+	"lane": 1
+  },
+  {
+	"spawn_time": 234.144,
+	"lane": 2
+  },
+  {
+	"spawn_time": 234.469,
+	"lane": 3
+  },
+  {
+	"spawn_time": 234.795,
+	"lane": 4
+  },
+  {
+	"spawn_time": 235.115,
+	"lane": 1
+  },
+  {
+	"spawn_time": 235.435,
+	"lane": 2
+  },
+  {
+	"spawn_time": 235.76,
+	"lane": 3
+  },
+  {
+	"spawn_time": 236.085,
+	"lane": 4
+  },
+  {
+	"spawn_time": 236.256,
+	"lane": 1
+  },
+  {
+	"spawn_time": 236.405,
+	"lane": 2
+  },
+  {
+	"spawn_time": 236.576,
+	"lane": 3
+  },
+  {
+	"spawn_time": 236.725,
+	"lane": 4
+  },
+  {
+	"spawn_time": 237.045,
+	"lane": 1
+  },
+  {
+	"spawn_time": 237.365,
+	"lane": 2
+  },
+  {
+	"spawn_time": 237.68,
+	"lane": 3
+  },
+  {
+	"spawn_time": 237.995,
+	"lane": 4
+  },
+  {
+	"spawn_time": 238.32,
+	"lane": 1
+  },
+  {
+	"spawn_time": 238.645,
+	"lane": 2
+  },
+  {
+	"spawn_time": 238.965,
+	"lane": 3
+  },
+  {
+	"spawn_time": 239.285,
+	"lane": 4
+  },
+  {
+	"spawn_time": 239.6,
+	"lane": 1
+  },
+  {
+	"spawn_time": 239.915,
+	"lane": 2
+  },
+  {
+	"spawn_time": 239.925,
+	"lane": 3
+  },
+  {
+	"spawn_time": 240.17,
+	"lane": 4
+  },
+  {
+	"spawn_time": 240.416,
+	"lane": 1
+  },
+  {
+	"spawn_time": 240.662,
+	"lane": 2
+  },
+  {
+	"spawn_time": 240.907,
+	"lane": 3
+  },
+  {
+	"spawn_time": 241.216,
+	"lane": 4
+  },
+  {
+	"spawn_time": 241.525,
+	"lane": 1
+  },
+  {
+	"spawn_time": 241.536,
+	"lane": 2
+  },
+  {
+	"spawn_time": 241.835,
+	"lane": 3
+  },
+  {
+	"spawn_time": 242.011,
+	"lane": 4
+  },
+  {
+	"spawn_time": 242.187,
+	"lane": 1
+  },
+  {
+	"spawn_time": 242.502,
+	"lane": 2
+  },
+  {
+	"spawn_time": 242.816,
+	"lane": 3
+  },
+  {
+	"spawn_time": 242.827,
+	"lane": 4
+  },
+  {
+	"spawn_time": 243.04,
+	"lane": 1
+  },
+  {
+	"spawn_time": 243.253,
+	"lane": 2
+  },
+  {
+	"spawn_time": 243.445,
+	"lane": 3
+  },
+  {
+	"spawn_time": 243.456,
+	"lane": 4
+  },
+  {
+	"spawn_time": 243.605,
+	"lane": 1
+  },
+  {
+	"spawn_time": 243.883,
+	"lane": 2
+  },
+  {
+	"spawn_time": 244.096,
+	"lane": 3
+  },
+  {
+	"spawn_time": 244.41,
+	"lane": 4
+  },
+  {
+	"spawn_time": 244.725,
+	"lane": 1
+  },
+  {
+	"spawn_time": 244.736,
+	"lane": 2
+  },
+  {
+	"spawn_time": 244.896,
+	"lane": 3
+  },
+  {
+	"spawn_time": 245.13,
+	"lane": 4
+  },
+  {
+	"spawn_time": 245.365,
+	"lane": 1
+  },
+  {
+	"spawn_time": 245.376,
+	"lane": 2
+  }
 ]
 #endregion
 var shiawase_chart: Array[Dictionary] = [
