@@ -933,19 +933,19 @@ func _input(event: InputEvent) -> void:
 				
 				var timing_discrepancy = abs(user_hit_time - note_hit_time)
 				
-				if timing_discrepancy <= 0.03:
+				if timing_discrepancy <= 0.1:
 					score += 5
 					current_fx.process_material.color = Color.GREEN
 					print(score)
-				elif timing_discrepancy <= 0.09:
+				elif timing_discrepancy <= 0.15:
 					score += 3
 					current_fx.process_material.color = Color.DEEP_SKY_BLUE
 					print(score)
-				elif timing_discrepancy <= 0.18:
+				elif timing_discrepancy <= 0.3:
 					score += 1
 					current_fx.process_material.color = Color.RED
 					print(score)
-				elif timing_discrepancy <= 0.30:
+				elif timing_discrepancy <= 0.5:
 					current_fx.process_material.color = Color.GRAY
 					print(score)
 				else:
